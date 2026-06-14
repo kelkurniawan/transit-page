@@ -1,0 +1,10 @@
+export default function LogoIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="42" height="42" rx="10" fill="#0f2a4a" />
+      <path d="M10 28h6v-4h10v4h6l-3-6H13l-3 6z" fill="#f59e0b" />
+      <rect x="14" y="14" width="14" height="10" rx="2" fill="white" />
+      <path d="M12 28a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM30 28a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" fill="white" />
+    </svg>
+  );
+}
