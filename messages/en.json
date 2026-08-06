@@ -162,5 +162,40 @@
       { "q": "Does Transit serve business (B2B) shipping?", "a": "Yes, B2B is our core service — covering the logistics needs of factories, manufacturing companies, distributors, and other businesses. We offer regular shipping contracts with fixed schedules, special rates for high volumes, and service tailored to your business's operational needs." },
       { "q": "How long has Transit been in operation?", "a": "Transit has been operating since 2001, making us one of the most experienced land freight companies on the Jakarta-Bandung route. With over 25 years of experience, we understand the ins and outs of logistics and shipping in the Jakarta-Bandung corridor." }
     ]
+  },
+  "Meta": {
+    "title": "Transit — Freight Forwarding & Trucking Jakarta Bandung",
+    "titleTemplate": "%s | Transit",
+    "description": "Transit - Trusted two-way freight forwarding and trucking service between Jakarta and Bandung since 2001. Fast, on-time, and secure shipping for your business needs.",
+    "keywords": [
+      "freight forwarder jakarta bandung",
+      "trucking service indonesia",
+      "land transport jakarta bandung",
+      "cargo delivery indonesia",
+      "b2b logistics indonesia",
+      "3pl partner indonesia",
+      "factory logistics jakarta",
+      "overland freight java",
+      "ftl ltl indonesia",
+      "bandung jakarta trucking"
+    ],
+    "ogTitle": "Transit — Freight Forwarding Jakarta Bandung Since 2001",
+    "ogDescription": "Trusted trucking service on the Jakarta-Bandung route. Fast, on-time, and secure shipping for your business needs.",
+    "ogImageAlt": "Transit — Freight Forwarding & Trucking Jakarta-Bandung",
+    "twitterTitle": "Transit — Freight Forwarding Jakarta Bandung",
+    "twitterDescription": "Trusted freight forwarding and trucking service on the Jakarta-Bandung route since 2001.",
+    "home": {
+      "title": "Transit — Freight Forwarding & Trucking Jakarta Bandung Since 2001",
+      "description": "Trusted two-way freight forwarding and trucking service across Jakarta, Tangerang, Serpong (BSD) ⇄ Bandung since 2001. Fast overland delivery, on time, secure, transparent pricing. B2B logistics solutions for factories & businesses. Free consultation via WhatsApp."
+    }
+  },
+  "Schema": {
+    "company": {
+      "description": "Trusted freight forwarding and trucking service on the Jakarta-Bandung route since 2001. Serving cargo shipping, industrial goods, and B2B logistics needs."
+    },
+    "bandungBranch": {
+      "name": "Transit — Bandung Branch",
+      "description": "Transit's Bandung branch — freight forwarding and trucking service on the Jakarta-Bandung route by land."
+    }
   }
 }
