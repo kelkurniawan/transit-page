@@ -8,6 +8,51 @@ All notable changes to the Transit website project.
 
 Perubahan yang sudah diimplementasikan tapi belum di-deploy ke production.
 
+### Added
+- **Website dwibahasa (Bahasa Indonesia + English)** via `next-intl`:
+  - Seluruh rute dipindah ke `src/app/[locale]/`; `globals.css` dan `sitemap.ts` tetap
+    di root `src/app/`.
+  - `src/i18n/routing.ts`, `src/i18n/navigation.ts`, `src/i18n/request.ts`, dan
+    `src/middleware.ts` baru — locale `id` (default) dan `en`, `localePrefix: 'as-needed'`
+    (URL Indonesia tanpa prefix, URL Inggris berprefix `/en`).
+  - Teks UI dipindah dari komponen ke `messages/id.json` & `messages/en.json` di root repo.
+  - `LanguageSwitcher` (dulu toggle ID/EN statis) kini locale-aware, dengan prop opsional
+    `slugMap` khusus halaman artikel untuk menautkan ke slug pasangannya.
+- **Blog dwibahasa**: `content/blog/` dipecah jadi `content/blog/id/` dan
+  `content/blog/en/`, 14 artikel per locale, dipasangkan lewat field frontmatter
+  `translationKey` (selalu berisi slug Indonesia). `src/lib/blog.ts` kini locale-aware
+  (`getAllPosts(locale)`, `getPostBySlug(locale, slug)`, `getAllPostSlugs(locale)`) plus
+  `getTranslatedSlug()` dan `findLocaleForSlug()` untuk pencarian pasangan lintas locale.
+- **Metadata & SEO per locale**: title/description/OG/Twitter per locale, `hreflang`
+  alternates (`id`/`en`/`x-default`) saling menunjuk, JSON-LD `inLanguage` sesuai locale.
+- **Sitemap dwibahasa**: `sitemap.ts` kini menghasilkan 32 URL (2 locale × (home + blog +
+  14 artikel)).
+
+### Fixed
+- **🔴 Cross-locale slug 404** — next-intl mendeteksi `Accept-Language: en` dan meredirect
+  URL Indonesia tanpa prefix ke `/en/...`; untuk artikel ini menghasilkan
+  `/en/blog/<slug-indonesia>` yang 404 karena slug ID dan EN sengaja berbeda.
+  `src/app/[locale]/blog/[slug]/page.tsx` sekarang mendeteksi slug yang sebenarnya milik
+  locale lain dan meredirect ke URL pasangannya yang benar, alih-alih 404.
+
+### Changed
+- **`output: "export"` dihapus** dari `next.config.ts` — static export tidak bisa
+  menjalankan middleware, dan middleware next-intl yang menangani pemilihan bahasa di
+  setiap request. Situs sekarang berjalan sebagai aplikasi Next.js standar di Vercel
+  dengan halaman ter-*generate* statis, bukan static export.
+- `CLAUDE.md`, `README.md`, `publishpreparation.md` diperbarui agar sesuai arsitektur
+  dwibahasa: bagian Internationalization (i18n) baru di `CLAUDE.md`, pohon struktur
+  proyek diperbarui, dan seluruh keterangan static export yang sudah usang diganti.
+
+### Notes
+- **Deploy pertama tanpa `output: "export"`.** Jika Vercel project settings masih
+  menyimpan override "Output Directory" ke `out` dari konfigurasi static-export
+  sebelumnya, override itu harus dihapus di Vercel → Settings → Build & Output Settings
+  sebelum deploy, atau build akan gagal.
+- Pemilik wajib meninjau seluruh terjemahan (klaim layanan, tarif, cakupan area,
+  asuransi) sebelum menganggapnya final — terjemahan mesin bisa halus secara bahasa
+  namun keliru secara komersial.
+
 ---
 
 ## [0.7.0] — 2026-06-13 — Cabang Bandung

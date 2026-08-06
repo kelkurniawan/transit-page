@@ -108,7 +108,8 @@ npm run build
 
 Pastikan:
 - Build selesai tanpa error
-- Folder `out/` terbentuk berisi file HTML, CSS, JS
+- Folder `.next/` terbentuk (build Next.js standar — bukan static export, jadi tidak ada
+  lagi folder `out/`)
 
 ---
 
@@ -142,11 +143,21 @@ Setiap kali Anda push ke GitHub, Vercel otomatis deploy ulang.
 
 ### Konfigurasi penting di Vercel
 
-Karena kita pakai `output: "export"` (static), tambahkan di Vercel project settings:
+Situs ini adalah aplikasi Next.js standar (bukan static export — `output: "export"` sudah
+dihapus dari `next.config.ts`, karena static export tidak bisa menjalankan middleware, dan
+middleware next-intl adalah yang menangani pemilihan bahasa ID/EN di setiap request).
+Biarkan Vercel mendeteksi otomatis:
 
 **Build & Output Settings:**
 - Build Command: `npm run build`
-- Output Directory: `out`
+- Output Directory: default Next.js (kosongkan / jangan override)
+
+> ⚠️ **Catatan pre-deploy penting:** deploy pertama pasca-i18n ini adalah deploy pertama
+> TANPA `output: "export"`. Jika project settings di Vercel masih menyimpan override
+> **Output Directory** ke `out` dari konfigurasi static-export sebelumnya, override itu
+> **harus dihapus** sebelum deploy — jika tidak, build akan gagal karena Next.js tidak
+> lagi menghasilkan folder `out/`. Periksa dulu di Vercel → Settings → Build & Output
+> Settings sebelum menjalankan deploy produksi.
 
 ---
 
