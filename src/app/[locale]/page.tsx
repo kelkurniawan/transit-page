@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -99,7 +100,14 @@ export const metadata: Metadata = {
     "Jasa ekspedisi & angkutan barang terpercaya rute dua arah Jakarta, Tangerang, Serpong (BSD) ⇄ Bandung sejak 2001. Pengiriman cepat via darat, tepat waktu, aman, harga transparan. Solusi logistik B2B untuk pabrik & bisnis. Konsultasi gratis via WhatsApp.",
 };
 
-export default function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <script

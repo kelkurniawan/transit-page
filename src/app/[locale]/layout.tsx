@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { notFound } from "next/navigation";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: {
@@ -172,13 +176,25 @@ const websiteJsonLd = {
   publisher: { "@type": "Organization", name: "PT Transit Mega Raja" },
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+  setRequestLocale(locale);
+
   return (
-    <html lang="id">
+    <html lang={locale}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -196,7 +212,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
     </html>
   );
 }

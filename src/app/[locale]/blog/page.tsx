@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import { getAllPosts } from "@/lib/blog";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -11,7 +12,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
 };
 
-export default function BlogPage() {
+export default async function BlogPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const posts = getAllPosts();
 
   return (

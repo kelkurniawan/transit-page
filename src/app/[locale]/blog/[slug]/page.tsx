@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import { getPostBySlug, getAllPostSlugs, getAllPosts } from "@/lib/blog";
 import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -9,14 +11,16 @@ const SITE_URL = "https://transitexpress.my.id";
 const WA_LINK =
   "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
 
-export async function generateStaticParams() {
-  return getAllPostSlugs().map((slug) => ({ slug }));
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) =>
+    getAllPostSlugs().map((slug) => ({ locale, slug }))
+  );
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
@@ -47,9 +51,11 @@ export async function generateMetadata({
 export default async function BlogPostPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+
   const post = await getPostBySlug(slug);
   if (!post) notFound();
 
