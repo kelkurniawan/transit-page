@@ -82,4 +82,4 @@ As a freight company operating since 2001, Transit offers:
 
 ## Get a Price Quote Now
 
-Every shipment has its own requirements. [Contact us via WhatsApp](https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.) for a free consultation and a price quote tailored to your business's specific needs. Our team is ready to help you find the most cost-efficient logistics solution.
+Every shipment has its own requirements. [Contact us via WhatsApp](https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20biaya%20pengiriman%20barang%20Jakarta-Bandung.) for a free consultation and a price quote tailored to your business's specific needs. Our team is ready to help you find the most cost-efficient logistics solution.
