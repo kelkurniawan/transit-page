@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import TrustedBy from "@/components/TrustedBy";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
@@ -97,7 +96,7 @@ const faqJsonLd = {
 export const metadata: Metadata = {
   title: "Transit — Jasa Ekspedisi & Angkutan Barang Jakarta Bandung Sejak 2001",
   description:
-    "Jasa ekspedisi & angkutan barang terpercaya rute Jakarta, Tangerang, Serpong (BSD) ke Bandung sejak 2001. Pengiriman cepat via darat, tepat waktu, aman, harga transparan. Solusi logistik B2B untuk pabrik & bisnis. Konsultasi gratis via WhatsApp.",
+    "Jasa ekspedisi & angkutan barang terpercaya rute dua arah Jakarta, Tangerang, Serpong (BSD) ⇄ Bandung sejak 2001. Pengiriman cepat via darat, tepat waktu, aman, harga transparan. Solusi logistik B2B untuk pabrik & bisnis. Konsultasi gratis via WhatsApp.",
 };
 
 export default function Home() {
@@ -110,7 +109,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <TrustedBy />
         <About />
         <Services />
         <WhyUs />
