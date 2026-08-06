@@ -1,36 +1,27 @@
+import { useTranslations } from "next-intl";
+
 export default function WhyUs() {
+  const t = useTranslations("WhyUs");
+  const items = t.raw("items") as Array<{ number: string; title: string; desc: string }>;
+
   return (
     <section className="why-us">
       <div className="container">
         <div className="section-header fade-in">
-          <div className="section-label">Track Record Kami</div>
-          <h2 className="section-title">Dipercaya oleh Ratusan Bisnis di Jakarta dan Bandung</h2>
+          <div className="section-label">{t("label")}</div>
+          <h2 className="section-title">{t("title")}</h2>
           <p className="section-subtitle">
-            Kami bangga telah menjadi mitra jasa ekspedisi dan logistik terpercaya bagi pabrik,
-            distributor, dan perusahaan di koridor Jakarta-Bandung selama lebih dari dua dekade.
+            {t("subtitle")}
           </p>
         </div>
         <div className="why-grid">
-          <div className="why-card fade-in">
-            <div className="why-number">25+</div>
-            <h3>Tahun Pengalaman</h3>
-            <p>Beroperasi sejak 2001 dengan rekam jejak pengiriman yang terbukti dan konsisten</p>
-          </div>
-          <div className="why-card fade-in">
-            <div className="why-number">99%</div>
-            <h3>Tepat Waktu</h3>
-            <p>Tingkat ketepatan waktu pengiriman yang konsisten — barang tiba sesuai jadwal</p>
-          </div>
-          <div className="why-card fade-in">
-            <div className="why-number">1000+</div>
-            <h3>Klien Puas</h3>
-            <p>Ribuan pelanggan bisnis yang mempercayakan pengiriman barang kepada kami</p>
-          </div>
-          <div className="why-card fade-in">
-            <div className="why-number">0%</div>
-            <h3>Kerusakan Barang</h3>
-            <p>Komitmen penuh terhadap keamanan dan keutuhan setiap barang yang dikirim</p>
-          </div>
+          {items.map((item, i) => (
+            <div className="why-card fade-in" key={i}>
+              <div className="why-number">{item.number}</div>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
