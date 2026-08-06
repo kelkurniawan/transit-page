@@ -19,9 +19,9 @@ export default function Hero() {
             <span className="highlight">Jakarta — Bandung</span> Terpercaya
           </h1>
           <p>
-            Mitra logistik terpercaya untuk pengiriman barang Jakarta–Bandung via jalur darat.
-            Berpengalaman sejak 2001 melayani ribuan bisnis dengan layanan yang cepat, tepat
-            waktu, dan aman.
+            Mitra logistik terpercaya untuk pengiriman barang dua arah — Jakarta–Bandung
+            maupun Bandung–Jakarta — via jalur darat. Berpengalaman sejak 2001 melayani ribuan
+            bisnis dengan layanan yang cepat, tepat waktu, dan aman.
           </p>
           <div className="hero-actions">
             <a href={WA_LINK} className="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
@@ -51,7 +51,7 @@ export default function Hero() {
           <div className="hero-image-wrap">
             <img
               src="/images/hero-truck.jpg"
-              alt="Truk ekspedisi Transit mengangkut barang via jalur darat rute Jakarta-Bandung"
+              alt="Truk ekspedisi Transit mengangkut barang via jalur darat rute dua arah Jakarta-Bandung dan Bandung-Jakarta"
               className="hero-image"
               width="520"
               height="620"
@@ -59,8 +59,8 @@ export default function Hero() {
             />
             <div className="hero-float hero-float-route">
               <span className="hf-pin jkt" /> Jakarta
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M5 12h14M13 6l6 6-6 6" />
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" role="img" aria-label="dua arah">
+                <path d="M3 12h18M7 7l-4 5 4 5M17 7l4 5-4 5" />
               </svg>
               Bandung <span className="hf-pin bdg" />
             </div>

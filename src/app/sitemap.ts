@@ -3,7 +3,7 @@ import { getAllPosts } from "@/lib/blog";
 
 export const dynamic = "force-static";
 
-const baseUrl = "https://transitmr.com";
+const baseUrl = "https://transitexpress.my.id";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();

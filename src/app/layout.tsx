@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | Transit",
   },
   description:
-    "Transit - Jasa ekspedisi dan angkutan barang terpercaya rute Jakarta-Bandung sejak 2001. Pengiriman cepat, tepat waktu, dan aman untuk kebutuhan bisnis Anda.",
+    "Transit - Jasa ekspedisi dan angkutan barang terpercaya rute dua arah Jakarta-Bandung dan Bandung-Jakarta sejak 2001. Pengiriman cepat, tepat waktu, dan aman untuk kebutuhan bisnis Anda.",
   keywords: [
     "jasa ekspedisi jakarta bandung",
     "cargo jakarta bandung",
@@ -29,10 +29,20 @@ export const metadata: Metadata = {
     "pengiriman barang tangerang ke bandung",
     "ekspedisi b2b jakarta bandung",
     "jasa pengiriman pabrik jakarta bandung",
+    "jasa ekspedisi bandung jakarta",
+    "cargo bandung jakarta",
+    "angkutan barang bandung jakarta",
+    "pengiriman barang bandung jakarta",
+    "ekspedisi bandung ke jakarta",
+    "kirim barang bandung ke jakarta",
+    "trucking bandung jakarta",
+    "ekspedisi bandung tangerang",
+    "cargo bandung serpong bsd",
+    "ekspedisi dua arah jakarta bandung",
   ],
   authors: [{ name: "Transit" }],
   creator: "Transit",
-  metadataBase: new URL("https://transitmr.com"),
+  metadataBase: new URL("https://transitexpress.my.id"),
   alternates: {
     canonical: "/",
   },
@@ -40,7 +50,7 @@ export const metadata: Metadata = {
     title: "Transit — Jasa Ekspedisi Jakarta Bandung Sejak 2001",
     description:
       "Layanan angkutan barang terpercaya rute Jakarta-Bandung. Pengiriman cepat, tepat waktu, dan aman untuk kebutuhan bisnis Anda.",
-    url: "https://transitmr.com",
+    url: "https://transitexpress.my.id",
     siteName: "Transit",
     locale: "id_ID",
     type: "website",
@@ -93,8 +103,8 @@ const jsonLd = {
     addressCountry: "ID",
   },
   email: "transitmegaraja@gmail.com",
-  url: "https://transitmr.com",
-  image: "https://transitmr.com/images/og-image.jpg",
+  url: "https://transitexpress.my.id",
+  image: "https://transitexpress.my.id/images/og-image.jpg",
   geo: {
     "@type": "GeoCoordinates",
     latitude: -6.1656,
@@ -145,7 +155,7 @@ const bandungBranchJsonLd = {
   },
   hasMap: "https://maps.app.goo.gl/iWfVQZmWnhBN67Ka7",
   email: "transitmegaraja@gmail.com",
-  url: "https://transitmr.com",
+  url: "https://transitexpress.my.id",
   areaServed: [
     { "@type": "City", name: "Bandung" },
     { "@type": "City", name: "Kabupaten Bandung" },
@@ -157,7 +167,7 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Transit",
-  url: "https://transitmr.com",
+  url: "https://transitexpress.my.id",
   inLanguage: "id-ID",
   publisher: { "@type": "Organization", name: "PT Transit Mega Raja" },
 };

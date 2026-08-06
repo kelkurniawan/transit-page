@@ -4,8 +4,8 @@
 
 **Company:** PT Transit Mega Raja (brand name: **Transit**)
 **Industry:** B2B Freight / Logistics
-**Route:** Jakarta, Tangerang, Serpong (BSD) — Kota Bandung (land transport only)
-**Coverage:** Pickup — Jakarta, Tangerang, Serpong, BSD, Bekasi · Delivery — Kota Bandung, Kab. Bandung, Bandung Barat
+**Route:** Two-way / bidirectional — Jakarta, Tangerang, Serpong (BSD), Bekasi ⇄ Bandung Raya (land transport only)
+**Coverage:** Bidirectional. Jabodetabek side — Jakarta, Tangerang, Serpong, BSD, Bekasi · Bandung side — Kota Bandung, Kab. Bandung, Bandung Barat. **Both regions serve as pickup AND delivery.**
 **Operating since:** 2001
 **Target customers:** Factories, distributors, B2B businesses
 
@@ -28,7 +28,7 @@
 | Address (HQ) | Jl. Krekot Bunder IV No.61, RT.6/RW.6, Ps. Baru, Jakarta Pusat, DKI Jakarta 10710 |
 | Branch (Bandung) | Jl. Caringin No. 35-39, Kota Bandung, Jawa Barat (coords -6.946533, 107.586784) |
 | Hours | Senin — Sabtu: 08:00 — 17:00 WIB |
-| Domain (planned) | https://transitmr.com |
+| Domain (live) | https://transitexpress.my.id — registrar Domainesia, DNS → Vercel |
 
 ## WhatsApp Link
 
@@ -68,7 +68,7 @@ transit/
 │   │   ├── WhyUs.tsx           # 4 stats cards
 │   │   ├── PainGain.tsx        # Pain/gain comparison (problems vs Transit)
 │   │   ├── Process.tsx         # 4-step process
-│   │   ├── Route.tsx           # Jakarta-Bandung route info
+│   │   ├── Route.tsx           # Two-way Jakarta⇄Bandung route info
 │   │   ├── FAQ.tsx             # Accordion FAQ (client)
 │   │   ├── CTA.tsx             # Call to action
 │   │   ├── Contact.tsx         # Contact + Google Maps
@@ -109,9 +109,9 @@ transit/
 ## SEO Notes
 
 - Structured data (JSON-LD): `MovingCompany` schema in `layout.tsx`, `FAQPage` schema in `page.tsx`
-- Target keywords: "jasa ekspedisi jakarta bandung", "angkutan barang jakarta bandung", "jasa angkutan barang"
+- Target keywords: "jasa ekspedisi jakarta bandung", "angkutan barang jakarta bandung", "jasa angkutan barang" — plus reverse-direction variants ("ekspedisi bandung jakarta", "cargo bandung jakarta")
 - Blog is the primary long-term SEO strategy — publish new articles regularly
-- Sitemap URL must be updated once real domain is live
+- Sitemap base URL is `https://transitexpress.my.id` (set in `sitemap.ts`, `layout.tsx`, `blog/[slug]/page.tsx`, `robots.txt`)
 
 ## Social Media (Placeholder — needs real URLs)
 

@@ -21,8 +21,8 @@ export default function Route() {
                   </svg>
                 </div>
                 <div>
-                  <h3>Pickup dari Jakarta, Tangerang &amp; Serpong</h3>
-                  <p>Penjemputan barang dari seluruh area Jakarta, Tangerang, Serpong, BSD, hingga Jabodetabek</p>
+                  <h3>Pickup dari Jabodetabek &amp; Bandung</h3>
+                  <p>Penjemputan barang dari seluruh area Jakarta, Tangerang, Serpong, BSD, Bekasi, maupun dari Bandung Raya</p>
                 </div>
               </div>
               <div className="route-item">
@@ -47,14 +47,14 @@ export default function Route() {
                   </svg>
                 </div>
                 <div>
-                  <h3>Delivery ke Kota Bandung &amp; Bandung Raya</h3>
-                  <p>Pengantaran langsung ke alamat tujuan di Kota Bandung dan area sekitarnya</p>
+                  <h3>Delivery ke Bandung Raya &amp; Jabodetabek</h3>
+                  <p>Pengantaran langsung ke alamat tujuan, baik di Bandung Raya maupun kembali ke area Jabodetabek</p>
                 </div>
               </div>
             </div>
             <div className="coverage-area">
               <div className="coverage-group">
-                <span className="coverage-group-label">Area Penjemputan</span>
+                <span className="coverage-group-label">Area Jabodetabek</span>
                 <div className="coverage-chips">
                   <span className="coverage-chip">Jakarta</span>
                   <span className="coverage-chip">Tangerang</span>
@@ -64,7 +64,7 @@ export default function Route() {
                 </div>
               </div>
               <div className="coverage-group">
-                <span className="coverage-group-label">Area Tujuan</span>
+                <span className="coverage-group-label">Area Bandung Raya</span>
                 <div className="coverage-chips">
                   <span className="coverage-chip">Kota Bandung</span>
                   <span className="coverage-chip">Kab. Bandung</span>
@@ -74,7 +74,7 @@ export default function Route() {
             </div>
           </div>
           <div className="route-visual">
-            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Peta rute ekspedisi Jakarta ke Bandung 150km">
+            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Peta rute ekspedisi dua arah Jakarta–Bandung dan Bandung–Jakarta, jarak 150km">
               <rect x="20" y="20" width="360" height="260" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
               <circle cx="120" cy="130" r="30" fill="rgba(245,158,11,0.2)" />
               <circle cx="120" cy="130" r="12" fill="#f59e0b" />
