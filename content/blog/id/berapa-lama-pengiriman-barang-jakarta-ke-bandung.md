@@ -1,4 +1,5 @@
 ---
+translationKey: "berapa-lama-pengiriman-barang-jakarta-ke-bandung"
 title: "Berapa Lama Pengiriman Barang dari Jakarta ke Bandung? Estimasi Waktu Lengkap"
 description: "Panduan estimasi waktu pengiriman barang dari Jakarta ke Bandung untuk layanan reguler dan ekspres. Faktor yang mempengaruhi durasi dan cara memastikan barang tiba tepat waktu."
 date: "2026-08-04"

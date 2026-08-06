@@ -1,4 +1,5 @@
 ---
+translationKey: "biaya-pengiriman-barang-jakarta-bandung"
 title: "Panduan Biaya Pengiriman Barang Jakarta Bandung 2026: Faktor dan Estimasi Harga"
 description: "Informasi lengkap mengenai faktor yang mempengaruhi biaya pengiriman barang rute Jakarta-Bandung, estimasi harga, dan tips mendapatkan tarif terbaik."
 date: "2026-06-08"

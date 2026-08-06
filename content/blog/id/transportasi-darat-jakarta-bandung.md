@@ -1,4 +1,5 @@
 ---
+translationKey: "transportasi-darat-jakarta-bandung"
 title: "Transportasi Darat Jakarta Bandung: Solusi Logistik Terpercaya untuk Bisnis"
 description: "Panduan lengkap transportasi darat Jakarta-Bandung untuk kebutuhan bisnis. Pelajari keunggulan angkutan darat, rute terbaik, dan cara memilih mitra logistik yang tepat."
 date: "2026-06-17"

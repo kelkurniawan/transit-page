@@ -1,4 +1,5 @@
 ---
+translationKey: "ftl-vs-ltl-memilih-muatan-truk-untuk-bisnis"
 title: "FTL vs LTL: Memilih Jenis Muatan Truk yang Tepat untuk Bisnis Anda"
 description: "Pahami perbedaan Full Truck Load (FTL) dan Less Than Truck Load (LTL) untuk pengiriman barang Jakarta-Bandung. Panduan memilih yang lebih hemat dan efisien untuk bisnis."
 date: "2026-07-14"

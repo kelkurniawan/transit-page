@@ -163,6 +163,19 @@
       { "q": "Sejak kapan Transit beroperasi?", "a": "Transit telah beroperasi sejak tahun 2001, menjadikan kami salah satu perusahaan jasa ekspedisi darat rute Jakarta-Bandung yang paling berpengalaman. Dengan lebih dari 25 tahun pengalaman, kami memahami seluk-beluk logistik dan pengiriman barang di koridor Jakarta-Bandung." }
     ]
   },
+  "Blog": {
+    "label": "Blog",
+    "title": "Artikel & Tips Ekspedisi Jakarta Bandung",
+    "subtitle": "Informasi seputar jasa pengiriman barang, tips logistik, dan panduan ekspedisi darat rute Jakarta-Bandung untuk kebutuhan bisnis Anda.",
+    "empty": "Artikel segera hadir. Nantikan tips dan informasi seputar ekspedisi Jakarta-Bandung.",
+    "breadcrumbHome": "Beranda",
+    "breadcrumbBlog": "Blog",
+    "ctaHeading": "Butuh jasa ekspedisi Jakarta–Bandung yang terpercaya?",
+    "ctaBody": "Konsultasi gratis dan dapatkan penawaran harga terbaik untuk kebutuhan pengiriman bisnis Anda.",
+    "ctaButton": "Chat via WhatsApp",
+    "relatedHeading": "Artikel Lainnya",
+    "backLink": "← Kembali ke Blog"
+  },
   "Meta": {
     "title": "Transit — Jasa Ekspedisi & Angkutan Barang Jakarta Bandung",
     "titleTemplate": "%s | Transit",
@@ -207,6 +220,10 @@
     "home": {
       "title": "Transit — Jasa Ekspedisi & Angkutan Barang Jakarta Bandung Sejak 2001",
       "description": "Jasa ekspedisi & angkutan barang terpercaya rute dua arah Jakarta, Tangerang, Serpong (BSD) ⇄ Bandung sejak 2001. Pengiriman cepat via darat, tepat waktu, aman, harga transparan. Solusi logistik B2B untuk pabrik & bisnis. Konsultasi gratis via WhatsApp."
+    },
+    "blog": {
+      "title": "Blog — Tips Ekspedisi & Logistik Jakarta Bandung",
+      "description": "Baca artikel dan tips seputar jasa ekspedisi, pengiriman barang, logistik, dan angkutan cargo rute Jakarta-Bandung dari PT Transit Mega Raja."
     }
   },
   "Schema": {

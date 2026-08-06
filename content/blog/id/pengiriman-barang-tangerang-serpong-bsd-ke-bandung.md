@@ -1,4 +1,5 @@
 ---
+translationKey: "pengiriman-barang-tangerang-serpong-bsd-ke-bandung"
 title: "Jasa Pengiriman Barang dari Tangerang, Serpong, dan BSD ke Bandung"
 description: "Layanan ekspedisi dan angkutan barang dari Tangerang, Serpong (BSD) ke Bandung. Penjemputan door-to-door, tepat waktu, dan tarif kompetitif untuk kebutuhan bisnis."
 date: "2026-07-07"

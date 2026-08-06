@@ -1,4 +1,5 @@
 ---
+translationKey: "logistik-b2b-jakarta-bandung-untuk-pabrik-distributor"
 title: "Logistik B2B Jakarta-Bandung: Panduan untuk Pabrik dan Distributor"
 description: "Panduan logistik B2B khusus untuk pabrik, manufaktur, dan distributor di rute Jakarta-Bandung. Cara memilih mitra ekspedisi tetap, SLA, dan optimasi biaya."
 date: "2026-07-21"

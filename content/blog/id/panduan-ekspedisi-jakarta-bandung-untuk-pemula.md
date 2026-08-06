@@ -1,4 +1,5 @@
 ---
+translationKey: "panduan-ekspedisi-jakarta-bandung-untuk-pemula"
 title: "Panduan Ekspedisi Jakarta-Bandung untuk Bisnis yang Baru Mulai Kirim Barang"
 description: "Panduan lengkap untuk bisnis yang baru pertama kali menggunakan jasa ekspedisi Jakarta-Bandung. Dari cara order, estimasi biaya, hingga tips agar pengiriman pertama berjalan lancar."
 date: "2026-06-24"

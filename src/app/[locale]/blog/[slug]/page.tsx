@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getPostBySlug, getAllPostSlugs, getAllPosts } from "@/lib/blog";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -13,7 +14,7 @@ const WA_LINK =
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
-    getAllPostSlugs().map((slug) => ({ locale, slug }))
+    getAllPostSlugs(locale).map((slug) => ({ locale, slug }))
   );
 }
 
@@ -22,14 +23,15 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const post = await getPostBySlug(slug);
+  const { locale, slug } = await params;
+  const post = await getPostBySlug(locale, slug);
   if (!post) return {};
-  const url = `${SITE_URL}/blog/${slug}`;
+  const path = locale === "id" ? `/blog/${slug}` : `/en/blog/${slug}`;
+  const url = `${SITE_URL}${path}`;
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `/blog/${slug}` },
+    alternates: { canonical: path },
     authors: [{ name: "Transit" }],
     openGraph: {
       title: post.title,
@@ -56,11 +58,16 @@ export default async function BlogPostPage({
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const post = await getPostBySlug(slug);
+  const t = await getTranslations({ locale, namespace: "Blog" });
+  const post = await getPostBySlug(locale, slug);
   if (!post) notFound();
 
-  const url = `${SITE_URL}/blog/${slug}`;
-  const related = getAllPosts().filter((p) => p.slug !== slug).slice(0, 2);
+  const path = locale === "id" ? `/blog/${slug}` : `/en/blog/${slug}`;
+  const url = `${SITE_URL}${path}`;
+  const homeUrl = locale === "id" ? SITE_URL : `${SITE_URL}/en`;
+  const blogUrl = locale === "id" ? `${SITE_URL}/blog` : `${SITE_URL}/en/blog`;
+  const dateLocale = locale === "id" ? "id-ID" : "en-US";
+  const related = getAllPosts(locale).filter((p) => p.slug !== slug).slice(0, 2);
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -69,7 +76,7 @@ export default async function BlogPostPage({
     description: post.description,
     datePublished: post.date,
     dateModified: post.date,
-    inLanguage: "id-ID",
+    inLanguage: locale === "id" ? "id-ID" : "en-US",
     image: `${SITE_URL}/images/og-image.jpg`,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     author: { "@type": "Organization", name: "Transit" },
@@ -84,8 +91,8 @@ export default async function BlogPostPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Beranda", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+      { "@type": "ListItem", position: 1, name: t("breadcrumbHome"), item: homeUrl },
+      { "@type": "ListItem", position: 2, name: t("breadcrumbBlog"), item: blogUrl },
       { "@type": "ListItem", position: 3, name: post.title, item: url },
     ],
   };
@@ -103,13 +110,13 @@ export default async function BlogPostPage({
       <Navbar />
       <article className="blog-post">
         <nav className="blog-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Beranda</a> <span>/</span>{" "}
-          <a href="/blog">Blog</a> <span>/</span> <span>{post.tag}</span>
+          <Link href="/">{t("breadcrumbHome")}</Link> <span>/</span>{" "}
+          <Link href="/blog">{t("breadcrumbBlog")}</Link> <span>/</span> <span>{post.tag}</span>
         </nav>
         <div className="section-label">{post.tag}</div>
         <h1>{post.title}</h1>
         <div className="blog-post-meta">
-          {new Date(post.date).toLocaleDateString("id-ID", {
+          {new Date(post.date).toLocaleDateString(dateLocale, {
             year: "numeric",
             month: "long",
             day: "numeric",
@@ -121,32 +128,32 @@ export default async function BlogPostPage({
         />
 
         <div className="blog-post-cta">
-          <h3>Butuh jasa ekspedisi Jakarta–Bandung yang terpercaya?</h3>
-          <p>Konsultasi gratis dan dapatkan penawaran harga terbaik untuk kebutuhan pengiriman bisnis Anda.</p>
+          <h3>{t("ctaHeading")}</h3>
+          <p>{t("ctaBody")}</p>
           <a href={WA_LINK} className="btn btn-wa btn-lg" target="_blank" rel="noopener noreferrer">
-            Chat via WhatsApp
+            {t("ctaButton")}
           </a>
         </div>
 
         {related.length > 0 && (
           <div className="blog-related">
-            <h2>Artikel Lainnya</h2>
+            <h2>{t("relatedHeading")}</h2>
             <div className="blog-related-grid">
               {related.map((p) => (
-                <a key={p.slug} href={`/blog/${p.slug}`} className="blog-related-card">
+                <Link key={p.slug} href={`/blog/${p.slug}`} className="blog-related-card">
                   <span className="blog-card-tag">{p.tag}</span>
                   <h3>{p.title}</h3>
                   <p>{p.description}</p>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
         )}
 
         <div style={{ marginTop: 48, paddingTop: 32, borderTop: "1px solid var(--gray-200)" }}>
-          <a href="/blog" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "none" }}>
-            ← Kembali ke Blog
-          </a>
+          <Link href="/blog" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "none" }}>
+            {t("backLink")}
+          </Link>
         </div>
       </article>
       <Footer />

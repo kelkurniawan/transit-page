@@ -6,7 +6,8 @@ export const dynamic = "force-static";
 const baseUrl = "https://transitexpress.my.id";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getAllPosts();
+  // TODO(task-12): rewrite for bilingual sitemap (32 URLs incl. /en routes).
+  const posts = getAllPosts("id");
 
   const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,

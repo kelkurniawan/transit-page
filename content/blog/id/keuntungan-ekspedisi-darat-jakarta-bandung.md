@@ -1,4 +1,5 @@
 ---
+translationKey: "keuntungan-ekspedisi-darat-jakarta-bandung"
 title: "5 Keuntungan Menggunakan Ekspedisi Darat untuk Pengiriman Jakarta-Bandung"
 description: "Mengapa jasa ekspedisi darat tetap menjadi pilihan utama untuk pengiriman barang rute Jakarta-Bandung? Simak keuntungannya untuk bisnis Anda."
 date: "2026-06-05"

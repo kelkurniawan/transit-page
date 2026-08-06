@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-const postsDirectory = path.join(process.cwd(), "content/blog");
+const contentRoot = path.join(process.cwd(), "content/blog");
 
 export interface BlogPost {
   slug: string;
@@ -12,41 +12,47 @@ export interface BlogPost {
   description: string;
   date: string;
   tag: string;
+  translationKey: string;
   content?: string;
 }
 
-export function getAllPosts(): BlogPost[] {
-  if (!fs.existsSync(postsDirectory)) return [];
-
-  const fileNames = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
-
-  const posts = fileNames.map((fileName) => {
-    const slug = fileName.replace(/\.md$/, "");
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-    const { data } = matter(fileContents);
-
-    return {
-      slug,
-      title: data.title ?? "",
-      description: data.description ?? "",
-      date: data.date ?? "",
-      tag: data.tag ?? "Artikel",
-    };
-  });
-
-  return posts.sort((a, b) => (a.date > b.date ? -1 : 1));
+function dirFor(locale: string) {
+  return path.join(contentRoot, locale);
 }
 
-export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
-  const fullPath = path.join(postsDirectory, `${slug}.md`);
+export function getAllPosts(locale: string): BlogPost[] {
+  const dir = dirFor(locale);
+  if (!fs.existsSync(dir)) return [];
+
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .map((fileName) => {
+      const slug = fileName.replace(/\.md$/, "");
+      const { data } = matter(fs.readFileSync(path.join(dir, fileName), "utf8"));
+      return {
+        slug,
+        title: data.title ?? "",
+        description: data.description ?? "",
+        date: data.date ?? "",
+        tag: data.tag ?? "Artikel",
+        translationKey: data.translationKey ?? slug,
+      };
+    })
+    .sort((a, b) => (a.date > b.date ? -1 : 1));
+}
+
+export async function getPostBySlug(
+  locale: string,
+  slug: string
+): Promise<BlogPost | null> {
+  const fullPath = path.join(dirFor(locale), `${slug}.md`);
   if (!fs.existsSync(fullPath)) return null;
 
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content: mdContent } = matter(fileContents);
-
-  const processedContent = await remark().use(html).process(mdContent);
-  const content = processedContent.toString();
+  const { data, content: mdContent } = matter(
+    fs.readFileSync(fullPath, "utf8")
+  );
+  const processed = await remark().use(html).process(mdContent);
 
   return {
     slug,
@@ -54,14 +60,26 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     description: data.description ?? "",
     date: data.date ?? "",
     tag: data.tag ?? "Artikel",
-    content,
+    translationKey: data.translationKey ?? slug,
+    content: processed.toString(),
   };
 }
 
-export function getAllPostSlugs(): string[] {
-  if (!fs.existsSync(postsDirectory)) return [];
+export function getAllPostSlugs(locale: string): string[] {
+  const dir = dirFor(locale);
+  if (!fs.existsSync(dir)) return [];
   return fs
-    .readdirSync(postsDirectory)
+    .readdirSync(dir)
     .filter((f) => f.endsWith(".md"))
     .map((f) => f.replace(/\.md$/, ""));
+}
+
+export function getTranslatedSlug(
+  translationKey: string,
+  targetLocale: string
+): string | null {
+  const match = getAllPosts(targetLocale).find(
+    (p) => p.translationKey === translationKey
+  );
+  return match ? match.slug : null;
 }

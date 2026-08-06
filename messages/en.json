@@ -163,6 +163,19 @@
       { "q": "How long has Transit been in operation?", "a": "Transit has been operating since 2001, making us one of the most experienced land freight companies on the Jakarta-Bandung route. With over 25 years of experience, we understand the ins and outs of logistics and shipping in the Jakarta-Bandung corridor." }
     ]
   },
+  "Blog": {
+    "label": "Blog",
+    "title": "Jakarta-Bandung Freight Articles & Tips",
+    "subtitle": "Insights on freight services, logistics tips, and land shipping guides for the Jakarta-Bandung route to support your business needs.",
+    "empty": "Articles coming soon. Stay tuned for tips and information about Jakarta-Bandung freight shipping.",
+    "breadcrumbHome": "Home",
+    "breadcrumbBlog": "Blog",
+    "ctaHeading": "Need a trusted Jakarta–Bandung freight service?",
+    "ctaBody": "Get a free consultation and the best price quote for your business shipping needs.",
+    "ctaButton": "Chat via WhatsApp",
+    "relatedHeading": "More Articles",
+    "backLink": "← Back to Blog"
+  },
   "Meta": {
     "title": "Transit — Freight Forwarding & Trucking Jakarta Bandung",
     "titleTemplate": "%s | Transit",
@@ -187,6 +200,10 @@
     "home": {
       "title": "Transit — Freight Forwarding & Trucking Jakarta Bandung Since 2001",
       "description": "Trusted two-way freight forwarding and trucking service across Jakarta, Tangerang, Serpong (BSD) ⇄ Bandung since 2001. Fast overland delivery, on time, secure, transparent pricing. B2B logistics solutions for factories & businesses. Free consultation via WhatsApp."
+    },
+    "blog": {
+      "title": "Blog — Freight & Logistics Tips Jakarta Bandung",
+      "description": "Read articles and tips about freight forwarding, shipping, logistics, and cargo transport on the Jakarta-Bandung route from PT Transit Mega Raja."
     }
   },
   "Schema": {

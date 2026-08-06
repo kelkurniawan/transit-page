@@ -1,4 +1,5 @@
 ---
+translationKey: "tips-memilih-jasa-ekspedisi-jakarta-bandung"
 title: "7 Tips Memilih Jasa Ekspedisi Jakarta Bandung yang Tepat untuk Bisnis Anda"
 description: "Panduan lengkap memilih jasa ekspedisi dan angkutan barang rute Jakarta-Bandung. Pelajari faktor penting seperti keamanan, ketepatan waktu, dan harga kompetitif."
 date: "2026-06-10"
