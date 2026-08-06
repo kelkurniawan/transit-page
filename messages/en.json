@@ -1,1 +1,47 @@
-{}
+{
+  "Nav": {
+    "about": "About Us",
+    "services": "Services",
+    "route": "Routes",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "quote": "Request a Quote",
+    "menu": "Menu",
+    "home": "Transit — Home"
+  },
+  "Footer": {
+    "tagline": "A trusted freight and goods transport service on the two-way Jakarta-Bandung route by land. Operating since 2001, serving the logistics and cargo shipping needs of businesses like yours.",
+    "navHeading": "Navigation",
+    "contactHeading": "Contact",
+    "headOffice": "Head Office: Jakarta Pusat, DKI Jakarta",
+    "branch": "Branch: Jl. Caringin No. 35-39, Kota Bandung",
+    "copyright": "© 2001 — 2026 Transit. All rights reserved.",
+    "createdBy": "Created by"
+  },
+  "CTA": {
+    "heading": "Ready to Ship Goods on Our Two-Way Jakarta-Bandung Route?",
+    "body": "Contact us now for a free consultation and get the best price quote for your business's freight and logistics needs.",
+    "whatsappCta": "Chat on WhatsApp Now",
+    "servicesCta": "View Services"
+  },
+  "Contact": {
+    "label": "Contact Us",
+    "title": "Transit Offices",
+    "intro": "Visit our office in Central Jakarta or reach us via WhatsApp for more information about our two-way Jakarta-Bandung freight and goods transport service.",
+    "headOfficeTitle": "Head Office — Jakarta",
+    "branchTitle": "Branch — Bandung",
+    "mapsLink": "View on Google Maps →",
+    "whatsappTitle": "WhatsApp",
+    "emailTitle": "Email",
+    "hoursTitle": "Operating Hours",
+    "hoursValue": "Monday — Saturday: 08:00 — 17:00 WIB",
+    "mapIframeTitleHQ": "Location of Transit Head Office in Central Jakarta",
+    "mapIframeTitleBranch": "Location of Transit Branch on Jl. Caringin, Bandung"
+  },
+  "WhatsApp": {
+    "label": "Chat via WhatsApp",
+    "floatLabel": "Chat with us",
+    "floatAriaLabel": "Contact us via WhatsApp"
+  }
+}

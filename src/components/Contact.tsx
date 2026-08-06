@@ -1,13 +1,17 @@
+import { useTranslations } from "next-intl";
+
 export default function Contact() {
+  const t = useTranslations("Contact");
+  const tWa = useTranslations("WhatsApp");
+
   return (
     <section className="contact" id="kontak">
       <div className="container">
         <div className="section-header fade-in">
-          <div className="section-label">Hubungi Kami</div>
-          <h2 className="section-title">Kantor Transit</h2>
+          <div className="section-label">{t("label")}</div>
+          <h2 className="section-title">{t("title")}</h2>
           <p className="section-subtitle">
-            Kunjungi kantor kami di Jakarta Pusat atau hubungi via WhatsApp untuk informasi
-            lebih lanjut mengenai jasa ekspedisi dan angkutan barang Jakarta-Bandung.
+            {t("intro")}
           </p>
         </div>
         <div className="contact-grid">
@@ -20,7 +24,7 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h3>Kantor Pusat — Jakarta</h3>
+                <h3>{t("headOfficeTitle")}</h3>
                 <p>
                   Jl. Krekot Bunder IV No.61<br />
                   RT.6/RW.6, Ps. Baru<br />
@@ -36,12 +40,12 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h3>Cabang — Bandung</h3>
+                <h3>{t("branchTitle")}</h3>
                 <p>
                   Jl. Caringin No. 35-39<br />
                   Kota Bandung, Jawa Barat<br />
                   <a href="https://maps.app.goo.gl/iWfVQZmWnhBN67Ka7" target="_blank" rel="noopener noreferrer">
-                    Lihat di Google Maps →
+                    {t("mapsLink")}
                   </a>
                 </p>
               </div>
@@ -53,10 +57,10 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h3>WhatsApp</h3>
+                <h3>{t("whatsappTitle")}</h3>
                 <p>
                   <a href="https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang." target="_blank" rel="noopener noreferrer">
-                    Chat via WhatsApp
+                    {tWa("label")}
                   </a>
                 </p>
               </div>
@@ -69,7 +73,7 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h3>Email</h3>
+                <h3>{t("emailTitle")}</h3>
                 <p>
                   <a href="mailto:transitmegaraja@gmail.com">
                     transitmegaraja@gmail.com
@@ -85,31 +89,31 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h3>Jam Operasional</h3>
-                <p>Senin — Sabtu: 08:00 — 17:00 WIB</p>
+                <h3>{t("hoursTitle")}</h3>
+                <p>{t("hoursValue")}</p>
               </div>
             </div>
           </div>
           <div className="contact-maps">
             <div className="map-wrap">
-              <span className="map-label">Kantor Pusat — Jakarta</span>
+              <span className="map-label">{t("headOfficeTitle")}</span>
               <div className="map-container">
                 <iframe
                   src="https://www.google.com/maps?q=-6.1656,106.834&z=16&hl=id&output=embed"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Lokasi Kantor Pusat Transit di Jakarta Pusat"
+                  title={t("mapIframeTitleHQ")}
                 />
               </div>
             </div>
             <div className="map-wrap">
-              <span className="map-label">Cabang — Bandung</span>
+              <span className="map-label">{t("branchTitle")}</span>
               <div className="map-container">
                 <iframe
                   src="https://www.google.com/maps?q=-6.946533,107.586784&z=16&hl=id&output=embed"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Lokasi Cabang Transit di Jl. Caringin, Kota Bandung"
+                  title={t("mapIframeTitleBranch")}
                 />
               </div>
             </div>

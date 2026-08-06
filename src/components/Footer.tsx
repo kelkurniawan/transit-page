@@ -1,38 +1,41 @@
+import { useTranslations } from "next-intl";
 import LogoIcon from "./icons/LogoIcon";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+  const tNav = useTranslations("Nav");
+  const tWa = useTranslations("WhatsApp");
+
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <a href="/" className="logo" aria-label="Transit — Beranda">
+            <a href="/" className="logo" aria-label={tNav("home")}>
               <LogoIcon className="logo-icon" />
               <div className="logo-text" style={{ color: "white" }}>TRANSIT</div>
             </a>
             <p>
-              Jasa ekspedisi dan angkutan barang terpercaya rute Jakarta-Bandung via jalur darat.
-              Berpengalaman sejak 2001 melayani kebutuhan logistik dan pengiriman cargo untuk
-              bisnis Anda.
+              {t("tagline")}
             </p>
           </div>
           <div>
-            <h4>Navigasi</h4>
+            <h4>{t("navHeading")}</h4>
             <ul className="footer-links">
-              <li><a href="/#tentang">Tentang Kami</a></li>
-              <li><a href="/#layanan">Layanan</a></li>
-              <li><a href="/#rute">Rute</a></li>
-              <li><a href="/#faq">FAQ</a></li>
-              <li><a href="/#kontak">Kontak</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li><a href="/#tentang">{tNav("about")}</a></li>
+              <li><a href="/#layanan">{tNav("services")}</a></li>
+              <li><a href="/#rute">{tNav("route")}</a></li>
+              <li><a href="/#faq">{tNav("faq")}</a></li>
+              <li><a href="/#kontak">{tNav("contact")}</a></li>
+              <li><a href="/blog">{tNav("blog")}</a></li>
             </ul>
           </div>
           <div>
-            <h4>Kontak</h4>
+            <h4>{t("contactHeading")}</h4>
             <ul className="footer-links">
               <li>
                 <a href="https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang." target="_blank" rel="noopener noreferrer">
-                  Chat via WhatsApp
+                  {tWa("label")}
                 </a>
               </li>
               <li>
@@ -40,13 +43,13 @@ export default function Footer() {
                   transitmegaraja@gmail.com
                 </a>
               </li>
-              <li>Kantor Pusat: Jakarta Pusat, DKI Jakarta</li>
-              <li>Cabang: Jl. Caringin No. 35-39, Kota Bandung</li>
+              <li>{t("headOffice")}</li>
+              <li>{t("branch")}</li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2001 — 2026 Transit. All rights reserved.</p>
+          <p>{t("copyright")}</p>
           <p className="footer-credit">
             <span className="footer-credit-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -54,7 +57,7 @@ export default function Footer() {
                 <polyline points="8 6 2 12 8 18" />
               </svg>
             </span>
-            Created by <span className="footer-credit-name">kelkurniawan</span>
+            {t("createdBy")} <span className="footer-credit-name">kelkurniawan</span>
           </p>
           <div className="footer-social">
             <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">

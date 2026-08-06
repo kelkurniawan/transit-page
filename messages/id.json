@@ -1,1 +1,47 @@
-{}
+{
+  "Nav": {
+    "about": "Tentang Kami",
+    "services": "Layanan",
+    "route": "Rute",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Kontak",
+    "quote": "Minta Penawaran",
+    "menu": "Menu",
+    "home": "Transit — Beranda"
+  },
+  "Footer": {
+    "tagline": "Jasa ekspedisi dan angkutan barang terpercaya rute Jakarta-Bandung dua arah via jalur darat. Berpengalaman sejak 2001 melayani kebutuhan logistik dan pengiriman cargo untuk bisnis Anda.",
+    "navHeading": "Navigasi",
+    "contactHeading": "Kontak",
+    "headOffice": "Kantor Pusat: Jakarta Pusat, DKI Jakarta",
+    "branch": "Cabang: Jl. Caringin No. 35-39, Kota Bandung",
+    "copyright": "© 2001 — 2026 Transit. All rights reserved.",
+    "createdBy": "Created by"
+  },
+  "CTA": {
+    "heading": "Siap Mengirim Barang via Ekspedisi Jakarta-Bandung Dua Arah?",
+    "body": "Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran harga terbaik untuk kebutuhan jasa angkutan barang dan logistik bisnis Anda.",
+    "whatsappCta": "Chat WhatsApp Sekarang",
+    "servicesCta": "Lihat Layanan"
+  },
+  "Contact": {
+    "label": "Hubungi Kami",
+    "title": "Kantor Transit",
+    "intro": "Kunjungi kantor kami di Jakarta Pusat atau hubungi via WhatsApp untuk informasi lebih lanjut mengenai jasa ekspedisi dan angkutan barang Jakarta-Bandung dua arah.",
+    "headOfficeTitle": "Kantor Pusat — Jakarta",
+    "branchTitle": "Cabang — Bandung",
+    "mapsLink": "Lihat di Google Maps →",
+    "whatsappTitle": "WhatsApp",
+    "emailTitle": "Email",
+    "hoursTitle": "Jam Operasional",
+    "hoursValue": "Senin — Sabtu: 08:00 — 17:00 WIB",
+    "mapIframeTitleHQ": "Lokasi Kantor Pusat Transit di Jakarta Pusat",
+    "mapIframeTitleBranch": "Lokasi Cabang Transit di Jl. Caringin, Kota Bandung"
+  },
+  "WhatsApp": {
+    "label": "Chat via WhatsApp",
+    "floatLabel": "Chat dengan kami",
+    "floatAriaLabel": "Hubungi via WhatsApp"
+  }
+}
