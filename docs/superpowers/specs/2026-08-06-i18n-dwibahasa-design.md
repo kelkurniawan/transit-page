@@ -61,9 +61,6 @@ src/
 │   ├── routing.ts          # locales ['id','en'], defaultLocale 'id', localePrefix 'as-needed'
 │   ├── navigation.ts       # Link, useRouter, usePathname yang sadar-locale
 │   └── request.ts          # pemuat pesan per request
-├── messages/
-│   ├── id.json             # teks UI Bahasa Indonesia
-│   └── en.json             # teks UI Bahasa Inggris
 ├── middleware.ts           # deteksi Accept-Language → arahkan pengunjung asing ke /en
 ├── app/
 │   └── [locale]/
@@ -75,6 +72,10 @@ src/
 ├── components/             # tetap di tempat; string diganti useTranslations()
 └── lib/
     └── blog.ts             # diperluas menjadi sadar-locale
+
+messages/                   # akar proyek, bukan di dalam src/ (konvensi next-intl)
+├── id.json                 # teks UI Bahasa Indonesia
+└── en.json                 # teks UI Bahasa Inggris
 
 content/blog/
 ├── id/                     # 14 artikel yang ada, dipindahkan ke sini
