@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import LogoIcon from "./icons/LogoIcon";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const WA_LINK =
   "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
@@ -33,10 +34,7 @@ export default function Navbar() {
             <li><a href="/#kontak">Kontak</a></li>
           </ul>
           <div className="nav-right">
-            <div className="lang-toggle">
-              <button className="active" aria-label="Bahasa Indonesia">ID</button>
-              <button aria-label="English">EN</button>
-            </div>
+            <LanguageSwitcher />
             <a href={WA_LINK} className="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener noreferrer">
               Minta Penawaran
             </a>
