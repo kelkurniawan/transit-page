@@ -6,6 +6,10 @@ import LogoIcon from "./icons/LogoIcon";
 const WA_LINK =
   "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
 
+// Toggle ID/EN belum berfungsi — aktifkan saat rencana i18n
+// (docs/superpowers/plans/2026-08-06-i18n-dwibahasa.md) selesai dikerjakan.
+const I18N_ENABLED = false;
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,20 +37,34 @@ export default function Navbar() {
             <li><a href="/#kontak">Kontak</a></li>
           </ul>
           <div className="nav-right">
-            <div className="lang-toggle">
-              <button className="active" aria-label="Bahasa Indonesia">ID</button>
-              <button aria-label="English">EN</button>
-            </div>
+            {I18N_ENABLED && (
+              <div className="lang-toggle">
+                <button className="active" aria-label="Bahasa Indonesia">ID</button>
+                <button aria-label="English">EN</button>
+              </div>
+            )}
             <a href={WA_LINK} className="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener noreferrer">
               Minta Penawaran
             </a>
-            <button className="hamburger" aria-label="Menu" onClick={() => setMenuOpen(!menuOpen)}>
+            <button
+              className={`hamburger${menuOpen ? " is-open" : ""}`}
+              aria-label="Menu"
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
               <span /><span /><span />
             </button>
           </div>
         </div>
       </nav>
-      <div className={`mobile-menu${menuOpen ? " active" : ""}`}>
+      <button
+        className={`mobile-menu-backdrop${menuOpen ? " active" : ""}`}
+        aria-label="Tutup menu"
+        tabIndex={menuOpen ? 0 : -1}
+        onClick={() => setMenuOpen(false)}
+      />
+      <div id="mobile-menu" className={`mobile-menu${menuOpen ? " active" : ""}`}>
         <a href="/#tentang" onClick={() => setMenuOpen(false)}>Tentang Kami</a>
         <a href="/#layanan" onClick={() => setMenuOpen(false)}>Layanan</a>
         <a href="/#rute" onClick={() => setMenuOpen(false)}>Rute</a>

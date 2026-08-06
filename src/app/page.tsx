@@ -12,6 +12,7 @@ import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import MobileCTABar from "@/components/MobileCTABar";
 import FadeInObserver from "@/components/FadeInObserver";
 
 const faqJsonLd = {
@@ -121,6 +122,7 @@ export default function Home() {
       </main>
       <Footer />
       <WhatsAppFloat />
+      <MobileCTABar />
       <FadeInObserver />
     </>
   );

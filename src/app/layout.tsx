@@ -195,6 +195,11 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
+        {/* .fade-in mulai dari opacity:0 dan hanya dibuka oleh IntersectionObserver.
+            Tanpa JS seluruh konten tak terlihat. */}
+        <noscript>
+          <style>{`.fade-in { opacity: 1 !important; transform: none !important; }`}</style>
+        </noscript>
       </head>
       <body suppressHydrationWarning>{children}</body>
     </html>

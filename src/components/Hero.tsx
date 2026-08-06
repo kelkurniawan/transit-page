@@ -19,19 +19,24 @@ export default function Hero() {
             <span className="highlight">Jakarta — Bandung</span> Terpercaya
           </h1>
           <p>
-            Mitra logistik terpercaya untuk pengiriman barang dua arah — Jakarta–Bandung
-            maupun Bandung–Jakarta — via jalur darat. Berpengalaman sejak 2001 melayani ribuan
-            bisnis dengan layanan yang cepat, tepat waktu, dan aman.
+            Pengiriman barang dua arah Jakarta ⇄ Bandung via jalur darat, dengan jadwal
+            tetap setiap hari. Sejak 2001 dipercaya ribuan pabrik dan distributor —
+            tepat waktu, aman, dan harga transparan sejak awal.
           </p>
           <div className="hero-actions">
             <a href={WA_LINK} className="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon />
-              <span>Chat via WhatsApp</span>
+              <span>Minta Penawaran Gratis</span>
             </a>
             <a href="#layanan" className="btn btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.3)" }}>
               Lihat Layanan
             </a>
           </div>
+          <ul className="hero-trust">
+            <li>Konsultasi gratis</li>
+            <li>Tanpa biaya tersembunyi</li>
+            <li>Respons cepat</li>
+          </ul>
           <div className="hero-stats">
             <div className="hero-stat">
               <div className="hero-stat-number">25+</div>

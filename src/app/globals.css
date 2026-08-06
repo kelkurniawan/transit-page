@@ -10,6 +10,7 @@
     --gray-50: #f8fafc;
     --gray-100: #f1f5f9;
     --gray-200: #e2e8f0;
+    --gray-300: #cbd5e1;
     --gray-400: #94a3b8;
     --gray-500: #64748b;
     --gray-600: #475569;
@@ -186,7 +187,19 @@ body {
     font-weight: 500;
     border-bottom: 1px solid var(--gray-100);
 }
+/* .mobile-menu a (0,1,1) menang atas .btn-wa (0,1,0) dan membuat teks tombol jadi abu-abu */
+.mobile-menu a.btn-wa { color: var(--white); }
 .mobile-menu .btn { width: 100%; justify-content: center; margin-top: 16px; }
+
+.mobile-menu-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 998;
+    background: rgba(15,42,74,0.35);
+    border: none;
+}
+.mobile-menu-backdrop.active { display: block; }
 
 @media (max-width: 1024px) {
     .nav-links { gap: 20px; }
@@ -272,6 +285,35 @@ body {
     .hero-actions { flex-direction: column; }
     .hero-actions .btn { width: 100%; justify-content: center; }
 }
+.hero-trust {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin-top: 20px;
+}
+.hero-trust li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.7);
+}
+.hero-trust li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    border-radius: 50%;
+    background: rgba(245,158,11,0.2);
+    /* centang oranye */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f59e0b' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+    background-size: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .hero-stats {
     display: flex;
     gap: 40px;
@@ -302,6 +344,9 @@ body {
 }
 .hero-image {
     width: 100%;
+    /* height:auto is required — the img's height="620" attribute is a presentational
+       hint that otherwise wins over aspect-ratio and forces a 620px-tall box. */
+    height: auto;
     aspect-ratio: 4 / 5;
     object-fit: cover;
     border-radius: 24px;
@@ -371,26 +416,40 @@ body {
     .hero-image-wrap { max-width: 380px; }
 }
 
+/* Mobile hero: pesan bisnis dulu, foto menyusul sebagai banner.
+   Sebelumnya .hero-visual { order: -1 } mendorong headline & CTA ke bawah lipatan. */
 @media (max-width: 768px) {
-    .hero { padding: 100px 0 60px; }
-    .hero .container { grid-template-columns: 1fr; gap: 36px; }
-    .hero h1 { font-size: 2rem; }
-    .hero p { font-size: 1rem; }
-    .hero-visual { order: -1; }
-    .hero-image-wrap { max-width: 340px; }
-    .hero-stats { gap: 20px; flex-wrap: wrap; }
+    .hero { padding: 96px 0 56px; }
+    .hero .container { grid-template-columns: 1fr; gap: 32px; }
+    .hero h1 { font-size: 2rem; margin-bottom: 16px; }
+    .hero p { font-size: 1rem; margin-bottom: 24px; max-width: none; }
+    .hero-badge { font-size: 0.8rem; margin-bottom: 16px; }
+    .hero-actions { gap: 12px; }
+
+    /* Foto jadi banner lebar, bukan potret tinggi yang memakan satu layar penuh */
+    .hero-image-wrap { max-width: none; }
+    .hero-image { aspect-ratio: 16 / 10; border-radius: 16px; }
+    /* Kartu melayang menutupi subjek foto pada lebar sempit */
+    .hero-float { display: none; }
+
+    .hero-trust { gap: 6px 14px; margin-top: 16px; }
+    .hero-trust li { font-size: 0.8rem; }
+
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 24px;
+        padding-top: 20px;
+    }
     .hero-stat-number { font-size: 1.5rem; }
-    .hero-badge { font-size: 0.8rem; }
+    .hero-stat p { font-size: 0.8rem; line-height: 1.4; }
 }
 
 @media (max-width: 480px) {
     .hero h1 { font-size: 1.75rem; }
-    .hero-stats { gap: 16px; }
-    .hero-stat { min-width: calc(50% - 10px); }
-    .hero-image-wrap { max-width: 300px; }
-    .hero-float-route { left: -12px; padding: 9px 12px; font-size: 0.8rem; }
-    .hero-float-stat { right: -12px; padding: 9px 12px; }
-    .hf-text strong { font-size: 0.85rem; }
+    .hero-stats { gap: 10px; }
+    .hero-stat-number { font-size: 1.35rem; }
 }
 
 /* ===== SECTIONS ===== */
@@ -551,8 +610,13 @@ section { padding: 80px 0; }
 }
 
 @media (max-width: 640px) {
-    .services-grid { grid-template-columns: 1fr; }
-    .service-card { padding: 24px; }
+    .services-grid { grid-template-columns: 1fr; gap: 14px; }
+    .service-card { padding: 20px; border-radius: 14px; }
+    .service-icon { width: 44px; height: 44px; border-radius: 12px; margin-bottom: 14px; }
+    .service-icon svg { width: 22px; height: 22px; }
+    .service-card h3 { font-size: 1.05rem; }
+    .service-card p { line-height: 1.6; }
+    .service-features { margin-top: 12px; gap: 6px; }
 }
 
 /* ===== WHY US ===== */
@@ -632,8 +696,26 @@ section { padding: 80px 0; }
     .process-steps::before { display: none; }
 }
 
-@media (max-width: 480px) {
-    .process-steps { grid-template-columns: 1fr; }
+/* 4 lingkaran bertumpuk jadi timeline horizontal yang jauh lebih ringkas */
+@media (max-width: 640px) {
+    .process-steps { grid-template-columns: 1fr; gap: 14px; }
+    .process-step {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        column-gap: 14px;
+        text-align: left;
+    }
+    .step-number {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        font-size: 1rem;
+        margin: 0;
+    }
+    .process-step h3 { grid-column: 2; grid-row: 1; font-size: 1rem; }
+    .process-step p { grid-column: 2; grid-row: 2; }
 }
 
 /* ===== ROUTE ===== */
@@ -762,8 +844,31 @@ section { padding: 80px 0; }
 @media (max-width: 1024px) {
     .solusi-grid { grid-template-columns: repeat(2, 1fr); }
 }
+/* 6 kartu vertikal setinggi 2,6 layar di mobile — diringkas jadi baris ikon+teks */
 @media (max-width: 640px) {
-    .solusi-grid { grid-template-columns: 1fr; }
+    .solusi-grid { grid-template-columns: 1fr; gap: 12px; }
+    .solusi-card {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        column-gap: 14px;
+        padding: 18px;
+        border-radius: 14px;
+    }
+    .solusi-icon {
+        grid-column: 1;
+        grid-row: 1 / span 3;
+        align-self: start;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        margin-bottom: 0;
+    }
+    .solusi-icon svg { width: 22px; height: 22px; }
+    /* justify-self:start — sebagai grid item, pill-nya melar selebar kolom */
+    .solusi-problem { grid-column: 2; grid-row: 1; justify-self: start; margin-bottom: 6px; }
+    .solusi-card h3 { grid-column: 2; grid-row: 2; font-size: 1rem; margin-bottom: 4px; }
+    .solusi-card p { grid-column: 2; grid-row: 3; line-height: 1.55; }
+    .solusi-cta { margin-top: 28px; }
     .solusi-cta .btn { width: 100%; justify-content: center; }
 }
 
@@ -1278,4 +1383,130 @@ section { padding: 80px 0; }
 @media (max-width: 768px) {
     .cta-actions { flex-direction: column; }
     .cta-actions .btn { width: 100%; justify-content: center; }
+}
+
+/* ===== MOBILE: SKALA TIPOGRAFI =====
+   Teks pendukung sebelumnya turun sampai 12,8px — terlalu kecil untuk dibaca di ponsel.
+   Minimum 14px (0.875rem) untuk semua body copy. */
+@media (max-width: 768px) {
+    .about-feature p,
+    .why-card p,
+    .process-step p,
+    .service-card p,
+    .solusi-card p,
+    .route-item p,
+    .contact-item p,
+    .blog-card p,
+    .service-features li,
+    .faq-answer-inner,
+    .footer-brand p,
+    .footer-links a,
+    .footer-links li { font-size: 0.875rem; }
+
+    .about-feature h3 { font-size: 0.95rem; }
+    .section-subtitle { font-size: 1rem; }
+    .faq-question { font-size: 0.95rem; padding: 18px 20px; }
+    .coverage-chip { font-size: 0.875rem; padding: 8px 14px; }
+}
+
+/* ===== MOBILE: TARGET SENTUH =====
+   Semua kontrol minimal 44x44px (WCAG 2.5.5 / Apple HIG). */
+@media (max-width: 768px) {
+    .hamburger {
+        min-width: 44px;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        margin-right: -10px;
+    }
+    .hamburger span { transition: transform 0.3s, opacity 0.2s; }
+    .hamburger.is-open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .hamburger.is-open span:nth-child(2) { opacity: 0; }
+    .hamburger.is-open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+    .mobile-menu a { padding: 13px 0; }
+    .mobile-menu .btn { min-height: 48px; }
+
+    .contact-item a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+    }
+    /* display:flex (bukan inline-flex) supaya seluruh lebar baris jadi area sentuh */
+    .footer-links a {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+    }
+    .footer-links { gap: 0; }
+    .logo { min-height: 44px; }
+    .footer-social a { width: 44px; height: 44px; }
+    .footer-social svg { width: 20px; height: 20px; }
+}
+
+/* ===== MOBILE: PEMADATAN SECTION ===== */
+@media (max-width: 768px) {
+    .footer { padding: 36px 0 20px; }
+    .footer-top { gap: 28px; padding-bottom: 24px; }
+    .why-grid { gap: 12px; }
+    .about-features { margin-top: 24px; }
+    .contact-info { gap: 18px; }
+    .contact-maps { gap: 16px; }
+    .map-container { min-height: 200px; }
+    .map-container iframe { min-height: 200px; }
+    .section-header { margin-bottom: 32px; }
+    .route-visual { padding: 20px; }
+    .coverage-area { margin-top: 28px; }
+}
+
+/* ===== MOBILE: STICKY CTA BAR =====
+   CTA permanen menggantikan bubble WhatsApp yang menimpa konten. */
+.mobile-cta-bar { display: none; }
+
+@media (max-width: 768px) {
+    .mobile-cta-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 998;
+        gap: 10px;
+        padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+        background: rgba(255,255,255,0.96);
+        backdrop-filter: blur(12px);
+        border-top: 1px solid var(--gray-200);
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+    }
+    .mobile-cta-bar .btn {
+        min-height: 48px;
+        justify-content: center;
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+    .mobile-cta-bar .btn-wa { flex: 2; }
+    .mobile-cta-bar .btn-outline { flex: 1; border-width: 2px; }
+}
+
+/* Di bawah ~400px label "Minta Penawaran" membungkus dan menaikkan tinggi bar */
+@media (max-width: 400px) {
+    .mobile-cta-bar { gap: 8px; padding-left: 12px; padding-right: 12px; }
+    .mobile-cta-bar .btn { padding: 12px 10px; font-size: 0.9rem; gap: 6px; }
+    .mobile-cta-bar .btn span { white-space: nowrap; }
+
+    /* Bubble melayang jadi mubazir (dan labelnya hover-only) saat bar aktif */
+    .wa-float { display: none; }
+
+    /* Ruang agar bar tidak menutupi akhir footer (di footer, bukan body,
+       supaya tidak muncul strip putih di bawah latar gelap) */
+    .footer { padding-bottom: 92px; }
+}
+
+/* ===== AKSESIBILITAS ANIMASI =====
+   .fade-in dimulai dari opacity:0 — beri jalan keluar kalau animasi dimatikan. */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .fade-in { opacity: 1; transform: none; transition: none; }
+    .hero-float-route,
+    .hero-float-stat { animation: none; }
 }
