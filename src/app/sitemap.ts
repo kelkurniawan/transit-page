@@ -1,34 +1,44 @@
-import type { MetadataRoute } from "next";
-import { getAllPosts } from "@/lib/blog";
+import type {MetadataRoute} from "next";
+import {getAllPosts} from "@/lib/blog";
+import {routing} from "@/i18n/routing";
 
 export const dynamic = "force-static";
 
 const baseUrl = "https://transitexpress.my.id";
 
+function urlFor(locale: string, path: string) {
+  const prefix = locale === routing.defaultLocale ? "" : `/${locale}`;
+  return `${baseUrl}${prefix}${path}`;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  // TODO(task-12): rewrite for bilingual sitemap (32 URLs incl. /en routes).
-  const posts = getAllPosts("id");
+  const entries: MetadataRoute.Sitemap = [];
 
-  const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.date ? new Date(post.date) : new Date(),
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
+  for (const locale of routing.locales) {
+    entries.push(
+      {
+        url: urlFor(locale, ""),
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: 1,
+      },
+      {
+        url: urlFor(locale, "/blog"),
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: 0.8,
+      }
+    );
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    ...postEntries,
-  ];
+    for (const post of getAllPosts(locale)) {
+      entries.push({
+        url: urlFor(locale, `/blog/${post.slug}`),
+        lastModified: post.date ? new Date(post.date) : new Date(),
+        changeFrequency: "monthly",
+        priority: 0.7,
+      });
+    }
+  }
+
+  return entries;
 }
