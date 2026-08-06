@@ -83,3 +83,27 @@ export function getTranslatedSlug(
   );
   return match ? match.slug : null;
 }
+
+/**
+ * Finds which locale a slug actually belongs to, searching every locale
+ * directory under content/blog (optionally skipping one). Used to recover
+ * from middleware locale-detection redirects that land on an unprefixed
+ * article slug under the wrong locale (e.g. an English-preferring browser
+ * redirected to /en/blog/<indonesian-slug>) — the slug is real, just not in
+ * this locale, so it should resolve to its pair rather than 404.
+ */
+export function findLocaleForSlug(
+  slug: string,
+  excludeLocale?: string
+): string | null {
+  if (!fs.existsSync(contentRoot)) return null;
+  const locales = fs
+    .readdirSync(contentRoot)
+    .filter((entry) => fs.statSync(path.join(contentRoot, entry)).isDirectory());
+
+  for (const l of locales) {
+    if (l === excludeLocale) continue;
+    if (getAllPostSlugs(l).includes(slug)) return l;
+  }
+  return null;
+}

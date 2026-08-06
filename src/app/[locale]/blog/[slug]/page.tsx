@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { getPostBySlug, getAllPostSlugs, getAllPosts, getTranslatedSlug } from "@/lib/blog";
+import {
+  getPostBySlug,
+  getAllPostSlugs,
+  getAllPosts,
+  getTranslatedSlug,
+  findLocaleForSlug,
+} from "@/lib/blog";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Link } from "@/i18n/navigation";
+import { Link, redirect } from "@/i18n/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -60,7 +66,24 @@ export default async function BlogPostPage({
 
   const t = await getTranslations({ locale, namespace: "Blog" });
   const post = await getPostBySlug(locale, slug);
-  if (!post) notFound();
+  if (!post) {
+    // The slug doesn't exist in this locale. This commonly happens when
+    // next-intl's Accept-Language detection redirects an unprefixed URL
+    // (e.g. /blog/<indonesian-slug>) to a prefixed one (e.g.
+    // /en/blog/<indonesian-slug>) — the slug is real, just under the wrong
+    // locale, since ID/EN article slugs are deliberately different strings.
+    // Resolve it to its pair in the active locale instead of 404ing.
+    const ownerLocale = findLocaleForSlug(slug, locale);
+    if (ownerLocale) {
+      const ownerPost = await getPostBySlug(ownerLocale, slug);
+      const pairedSlug = ownerPost
+        ? getTranslatedSlug(ownerPost.translationKey, locale)
+        : null;
+      redirect({ href: pairedSlug ? `/blog/${pairedSlug}` : "/blog", locale });
+    }
+    // Genuinely unknown slug in every locale — a real 404.
+    notFound();
+  }
 
   const path = locale === "id" ? `/blog/${slug}` : `/en/blog/${slug}`;
   const url = `${SITE_URL}${path}`;
