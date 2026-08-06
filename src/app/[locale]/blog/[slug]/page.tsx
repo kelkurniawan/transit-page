@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { getPostBySlug, getAllPostSlugs, getAllPosts } from "@/lib/blog";
+import { getPostBySlug, getAllPostSlugs, getAllPosts, getTranslatedSlug } from "@/lib/blog";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
@@ -69,6 +69,13 @@ export default async function BlogPostPage({
   const dateLocale = locale === "id" ? "id-ID" : "en-US";
   const related = getAllPosts(locale).filter((p) => p.slug !== slug).slice(0, 2);
 
+  const slugMap = Object.fromEntries(
+    routing.locales.map((l) => [
+      l,
+      l === locale ? slug : getTranslatedSlug(post.translationKey, l),
+    ])
+  ) as Record<string, string | null>;
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -107,7 +114,7 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <Navbar />
+      <Navbar slugMap={slugMap} />
       <article className="blog-post">
         <nav className="blog-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">{t("breadcrumbHome")}</Link> <span>/</span>{" "}

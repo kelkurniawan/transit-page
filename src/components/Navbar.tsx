@@ -8,7 +8,12 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const WA_LINK =
   "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
 
-export default function Navbar() {
+export default function Navbar({
+  slugMap,
+}: {
+  /** Forwarded to LanguageSwitcher. See its doc comment for details. */
+  slugMap?: Record<string, string | null>;
+}) {
   const t = useTranslations("Nav");
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,7 +41,7 @@ export default function Navbar() {
             <li><a href="/#kontak">{t("contact")}</a></li>
           </ul>
           <div className="nav-right">
-            <LanguageSwitcher />
+            <LanguageSwitcher slugMap={slugMap} />
             <a href={WA_LINK} className="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener noreferrer">
               {t("quote")}
             </a>
