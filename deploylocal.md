@@ -52,7 +52,7 @@ Jika port 3000 sudah dipakai, Next.js otomatis pakai port berikutnya (3001, 3002
 | Perintah | Fungsi |
 |---|---|
 | `npm run dev` | Jalankan development server (hot reload aktif) |
-| `npm run build` | Build untuk production (static export ke folder `out/`) |
+| `npm run build` | Build untuk production (aplikasi Next.js standar, bukan static export — output ke folder `.next/`) |
 | `npm run start` | Jalankan production build secara lokal |
 | `npm run lint` | Cek error kode dengan ESLint |
 
@@ -65,7 +65,7 @@ Jika port 3000 sudah dipakai, Next.js otomatis pakai port berikutnya (3001, 3002
 | Kecepatan start | Cepat | Lebih lama (compile semua halaman) |
 | Hot reload | ✓ Otomatis reload saat file berubah | ✗ |
 | Error messages | Detail (untuk debugging) | Minimal |
-| Folder output | `.next/` | `out/` (static files siap upload) |
+| Folder output | `.next/` | `.next/` (bukan static export, tidak ada folder `out/`) |
 
 ---
 
@@ -127,5 +127,5 @@ transit/
 ├── src/components/          ← Semua section website
 ├── content/blog/            ← Artikel blog (.md files)
 ├── public/                  ← File statis (favicon, robots.txt)
-└── out/                     ← Output build production (jangan edit manual)
+└── .next/                   ← Output build production (bukan static export, jangan edit manual)
 ```

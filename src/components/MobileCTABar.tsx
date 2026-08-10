@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 const WA_LINK =
@@ -5,6 +7,8 @@ const WA_LINK =
 
 /** CTA permanen di bawah layar mobile. Disembunyikan di atas 768px lewat CSS. */
 export default function MobileCTABar() {
+  const t = useTranslations("Nav");
+
   return (
     <div className="mobile-cta-bar">
       <a
@@ -14,12 +18,12 @@ export default function MobileCTABar() {
         rel="noopener noreferrer"
       >
         <WhatsAppIcon size={20} />
-        <span>Minta Penawaran</span>
+        <span>{t("quote")}</span>
       </a>
-      {/* "/#kontak" bukan "#kontak" — bar ini juga dipakai di halaman blog */}
-      <a href="/#kontak" className="btn btn-outline">
-        Kontak
-      </a>
+      {/* Link locale-aware — bar ini juga dipakai di halaman blog */}
+      <Link href="/#kontak" className="btn btn-outline">
+        {t("contact")}
+      </Link>
     </div>
   );
 }

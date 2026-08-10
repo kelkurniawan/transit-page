@@ -1,4 +1,5 @@
 ---
+translationKey: "berapa-lama-pengiriman-barang-jakarta-ke-bandung"
 title: "Berapa Lama Pengiriman Barang dari Jakarta ke Bandung? Estimasi Waktu Lengkap"
 description: "Panduan estimasi waktu pengiriman barang dari Jakarta ke Bandung untuk layanan reguler dan ekspres. Faktor yang mempengaruhi durasi dan cara memastikan barang tiba tepat waktu."
 date: "2026-08-04"
@@ -7,7 +8,7 @@ tag: "Panduan"
 
 ## Pertanyaan Paling Sering: "Berapa Lama Barang Saya Sampai?"
 
-Ini adalah pertanyaan nomor satu yang kami terima dari calon klien. Jawabannya tergantung beberapa faktor, tapi kami akan berikan gambaran yang jelas agar Anda bisa merencanakan pengiriman dengan lebih baik.
+Ini adalah pertanyaan nomor satu yang kami terima dari calon klien. Jawabannya tergantung beberapa faktor, tapi kami akan berikan gambaran yang jelas agar Anda bisa merencanakan pengiriman dengan lebih baik. Estimasi yang sama berlaku untuk arah sebaliknya, dari Bandung ke Jakarta, karena armada kami menjalankan rute ini dua arah.
 
 **Rangkuman cepat:**
 

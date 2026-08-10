@@ -1,4 +1,5 @@
 ---
+translationKey: "pengiriman-barang-bekasi-ke-bandung"
 title: "Jasa Pengiriman Barang dari Bekasi ke Bandung: Rute, Waktu, dan Tarif"
 description: "Layanan angkutan barang dan ekspedisi dari Bekasi ke Bandung. Informasi rute, estimasi waktu tempuh, area pickup di Bekasi, dan tips mendapatkan tarif terbaik."
 date: "2026-09-01"
@@ -90,7 +91,7 @@ Dari Bekasi, kami antarkan ke seluruh Bandung Raya:
 - **Kabupaten Bandung:** Dayeuhkolot, Banjaran, Soreang, Majalaya, Rancaekek, Cicalengka
 - **Bandung Barat:** Padalarang, Ngamprah, Cihampelas
 
-Untuk Kabupaten Bandung bagian Selatan atau lokasi spesifik lainnya, konfirmasi dulu dengan tim kami untuk memastikan cakupan dan estimasi biaya yang akurat.
+Arah sebaliknya juga kami layani. Rute utama kami Jakarta-Bandung berjalan dua arah, jadi barang dari Bandung ikut perjalanan balik ke Jakarta dan pengantaran ke alamat tujuan di Bekasi kami tangani dari sisi Jakarta. Untuk Kabupaten Bandung bagian Selatan atau lokasi spesifik lainnya, konfirmasi dulu dengan tim kami untuk memastikan cakupan dan estimasi biaya yang akurat.
 
 ## Layanan untuk Kebutuhan Rutin Bisnis Industri
 

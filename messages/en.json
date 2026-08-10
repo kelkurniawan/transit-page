@@ -1,0 +1,344 @@
+{
+  "Nav": {
+    "about": "About Us",
+    "services": "Services",
+    "route": "Routes",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "quote": "Request a Quote",
+    "menu": "Menu",
+    "home": "Transit — Home",
+    "closeMenu": "Close menu"
+  },
+  "Footer": {
+    "tagline": "A trusted freight and goods transport service on the two-way Jakarta-Bandung route by land. Operating since 2001, serving the logistics and cargo shipping needs of businesses like yours.",
+    "navHeading": "Navigation",
+    "contactHeading": "Contact",
+    "headOffice": "Head Office: Jakarta Pusat, DKI Jakarta",
+    "branch": "Branch: Jl. Caringin No. 35-39, Kota Bandung",
+    "copyright": "© 2001 — 2026 Transit. All rights reserved.",
+    "createdBy": "Created by"
+  },
+  "CTA": {
+    "heading": "Ready to Ship Goods on Our Two-Way Jakarta-Bandung Route?",
+    "body": "Contact us now for a free consultation and get the best price quote for your business's freight and logistics needs.",
+    "whatsappCta": "Chat on WhatsApp Now",
+    "servicesCta": "View Services"
+  },
+  "Contact": {
+    "label": "Contact Us",
+    "title": "Transit Offices",
+    "intro": "Visit our office in Central Jakarta or reach us via WhatsApp for more information about our two-way Jakarta-Bandung freight and goods transport service.",
+    "headOfficeTitle": "Head Office — Jakarta",
+    "branchTitle": "Branch — Bandung",
+    "mapsLink": "View on Google Maps →",
+    "whatsappTitle": "WhatsApp",
+    "emailTitle": "Email",
+    "hoursTitle": "Operating Hours",
+    "hoursValue": "Monday — Saturday: 08:00 — 17:00 WIB",
+    "mapIframeTitleHQ": "Location of Transit Head Office in Central Jakarta",
+    "mapIframeTitleBranch": "Location of Transit Branch on Jl. Caringin, Bandung"
+  },
+  "WhatsApp": {
+    "label": "Chat via WhatsApp",
+    "floatLabel": "Chat with us",
+    "floatAriaLabel": "Contact us via WhatsApp"
+  },
+  "Hero": {
+    "badge": "Trusted Since 2001",
+    "titlePrefix": "Trusted",
+    "titleHighlight": "Jakarta — Bandung",
+    "titleSuffix": "Freight & Cargo Forwarding",
+    "subtitle": "Two-way freight between Jakarta and Bandung by land, on a fixed daily schedule. Trusted since 2001 by thousands of factories and distributors — on time, secure, and transparently priced from the start.",
+    "whatsappCta": "Get a Free Quote",
+    "servicesCta": "View Services",
+    "statYears": "Years in Operation",
+    "statClients": "Clients Served",
+    "statSupport": "Customer Support",
+    "imageAlt": "Transit freight truck hauling cargo by land on the two-way Jakarta-Bandung and Bandung-Jakarta route",
+    "twoWayAriaLabel": "two-way",
+    "onTimeStat": "99% On-Time",
+    "onTimeCaption": "Thousands of successful deliveries",
+    "trustConsultation": "Free consultation",
+    "trustNoHiddenFees": "No hidden fees",
+    "trustFastResponse": "Fast response"
+  },
+  "About": {
+    "label": "About Us",
+    "title": "A Trusted Logistics Partner for Your Business",
+    "subtitle": "Transit is a freight forwarding and goods transport company that has served the Jakarta-Bandung route since 2001. With over two decades of experience in land transportation and logistics, we understand your business's need for efficient, safe, and reliable shipping. We handle a wide range of cargo — from industrial raw materials and manufactured goods to general merchandise — all delivered to the highest standards of safety and punctuality.",
+    "imageAlt": "Transit cargo warehouse for logistics and goods storage serving the Jakarta-Bandung shipping route",
+    "yearBadge": "Established",
+    "features": [
+      {
+        "title": "Safe & Secure",
+        "desc": "Your goods are protected at every stage of the shipping process"
+      },
+      {
+        "title": "On-Time",
+        "desc": "Consistent on-time delivery with a regular shipping schedule"
+      },
+      {
+        "title": "Professional Team",
+        "desc": "Experienced drivers trained in careful cargo handling"
+      },
+      {
+        "title": "Flexible Service",
+        "desc": "Tailored to your logistics needs and operational schedule"
+      }
+    ]
+  },
+  "Services": {
+    "label": "Our Services",
+    "title": "Freight Solutions for Every Business Need",
+    "subtitle": "We offer a range of freight forwarding and goods transport services by land on the Jakarta-Bandung route, tailored to your business's logistics needs.",
+    "items": [
+      {
+        "title": "Regular Cargo Transport",
+        "desc": "Regular shipping service on the Jakarta-Bandung route with a fixed daily schedule and competitive rates. Ideal for your business's routine shipping needs.",
+        "features": [
+          "Daily shipping schedule",
+          "1–2 business day estimate",
+          "Competitive rates"
+        ]
+      },
+      {
+        "title": "Express (Same-Day) Delivery",
+        "desc": "Need fast delivery? Our express service ensures your goods arrive at their destination the same day. Ideal for urgent shipments.",
+        "features": [
+          "Same-day arrival",
+          "Priority handling",
+          "For urgent shipments"
+        ]
+      },
+      {
+        "title": "Industrial & Manufacturing Cargo",
+        "desc": "A dedicated service for large-scale industrial cargo — factory raw materials, manufactured goods, machinery, textiles, and electronics.",
+        "features": [
+          "High volume & weight",
+          "Professional handling",
+          "Long-term B2B contracts"
+        ]
+      }
+    ]
+  },
+  "WhyUs": {
+    "label": "Our Track Record",
+    "title": "Trusted by Hundreds of Businesses in Jakarta and Bandung",
+    "subtitle": "We're proud to be a trusted freight and logistics partner for factories, distributors, and companies along the Jakarta-Bandung corridor for over two decades.",
+    "items": [
+      {
+        "number": "25+",
+        "title": "Years of Experience",
+        "desc": "Operating since 2001 with a proven, consistent shipping track record"
+      },
+      {
+        "number": "99%",
+        "title": "On-Time",
+        "desc": "A consistent on-time delivery rate — goods arrive as scheduled"
+      },
+      {
+        "number": "1000+",
+        "title": "Satisfied Clients",
+        "desc": "Thousands of business customers who trust us with their shipments"
+      },
+      {
+        "number": "0%",
+        "title": "Cargo Damage",
+        "desc": "Full commitment to the safety and integrity of every shipment"
+      }
+    ]
+  },
+  "PainGain": {
+    "label": "Why Choose Transit",
+    "title": "Your Shipping Problems, Solved",
+    "subtitle": "Reliable Jakarta-Bandung shipping without the drama. Here's what you get when you trust Transit with your cargo.",
+    "ctaLabel": "Free Consultation via WhatsApp",
+    "items": [
+      {
+        "problem": "Frequently late?",
+        "title": "On-Time, Every Time",
+        "desc": "Fixed daily schedule. Your business operations stay uninterrupted."
+      },
+      {
+        "problem": "Damaged goods?",
+        "title": "Safe Delivery, Guaranteed",
+        "desc": "Handled by a professional team. A 25+ year track record of safe delivery."
+      },
+      {
+        "problem": "Hidden fees?",
+        "title": "Transparent Pricing",
+        "desc": "Clear rates upfront, no surprise charges. Savings for high-volume shipments."
+      },
+      {
+        "problem": "Hard to reach?",
+        "title": "Always Responsive",
+        "desc": "Real-time updates straight via WhatsApp. Easy to coordinate."
+      },
+      {
+        "problem": "Can't rely on them?",
+        "title": "Ready for the Long Term",
+        "desc": "Regular shipping contracts for your business's supply chain."
+      },
+      {
+        "problem": "High volume?",
+        "title": "Full Fleet Capacity",
+        "desc": "From small parcels to full truck loads (FTL). All handled."
+      }
+    ]
+  },
+  "Process": {
+    "label": "How It Works",
+    "title": "A Simple, Fast Shipping Process",
+    "subtitle": "Just four simple steps to ship your goods through our freight service.",
+    "steps": [
+      {
+        "title": "Contact Us",
+        "desc": "Chat via WhatsApp for a free consultation about your shipping needs"
+      },
+      {
+        "title": "Get a Quote",
+        "desc": "We provide the best cost estimate and shipping schedule based on your cargo type and volume"
+      },
+      {
+        "title": "Cargo Pickup",
+        "desc": "Our team picks up your goods directly at your location (door-to-door service) as scheduled"
+      },
+      {
+        "title": "Goods Arrive",
+        "desc": "Your goods arrive safely and on time at the destination address in Jakarta or Bandung"
+      }
+    ]
+  },
+  "Route": {
+    "label": "Shipping Route Coverage",
+    "title": "Jakarta, Tangerang, Serpong — Bandung City",
+    "subtitle": "Our main freight route connects Jakarta, Tangerang, and Serpong (BSD) with Bandung City by an efficient, secure land route. We offer two-way shipping — from Jakarta-Tangerang-Serpong to Bandung and back — covering the entire western Greater Jakarta area to Greater Bandung.",
+    "items": [
+      {
+        "title": "Pickup from Greater Jakarta & Bandung",
+        "desc": "We pick up goods from anywhere in Jakarta, Tangerang, Serpong, BSD, Bekasi, or from Greater Bandung"
+      },
+      {
+        "title": "Shipping by Land",
+        "desc": "A well-maintained truck fleet with experienced drivers on the Jakarta-Bandung route"
+      },
+      {
+        "title": "Delivery to Greater Bandung & Greater Jakarta",
+        "desc": "Direct delivery to the destination address, whether in Greater Bandung or back to the Greater Jakarta area"
+      }
+    ],
+    "jabodetabekChips": [
+      "Jakarta",
+      "Tangerang",
+      "Serpong",
+      "BSD",
+      "Bekasi"
+    ],
+    "jabodetabekLabel": "Greater Jakarta Area",
+    "bandungChips": [
+      "Bandung City",
+      "Bandung Regency",
+      "West Bandung"
+    ],
+    "bandungLabel": "Greater Bandung Area",
+    "mapAriaLabel": "Map of the two-way Jakarta–Bandung and Bandung–Jakarta shipping route, 150km distance",
+    "mapCaption": "By Land"
+  },
+  "FAQ": {
+    "label": "Common Questions",
+    "title": "Frequently Asked Questions (FAQ)",
+    "subtitle": "Find answers to frequently asked questions about our Jakarta-Bandung freight and goods transport services.",
+    "items": [
+      {
+        "q": "How much does Jakarta-Bandung freight shipping cost?",
+        "a": "The cost of shipping on the Jakarta-Bandung route (both ways) varies depending on the type of goods, volume, and weight. We offer competitive rates for both regular and express shipping, whether from Jakarta to Bandung or the other way around. Contact us via WhatsApp to get the best price quote for your shipping needs."
+      },
+      {
+        "q": "How long does shipping take on the Jakarta-Bandung route (both ways)?",
+        "a": "Regular shipping takes 1-2 business days, while our express service can deliver the same day depending on pickup time — this applies in both directions, whether from Jakarta to Bandung or the other way around. We run a fixed daily shipping schedule to make sure your goods arrive on time."
+      },
+      {
+        "q": "What types of goods can be shipped?",
+        "a": "We handle a wide range of goods, including industrial raw materials, manufactured goods, electronics, textiles, machine spare parts, office equipment, and general merchandise. For goods requiring special handling, please consult with our team first."
+      },
+      {
+        "q": "Do you offer pickup from the sender's location?",
+        "a": "Yes, we provide door-to-door pickup from your location in Jakarta, Tangerang, Serpong (BSD), Bekasi, or from Greater Bandung. Our team picks up your goods according to the agreed schedule and delivers them directly to the destination address — whether that's Bandung City and the surrounding area, or back to the Greater Jakarta area."
+      },
+      {
+        "q": "Does Transit ship from Tangerang and Serpong (BSD) to Bandung?",
+        "a": "Yes, our pickup coverage includes Jakarta, Tangerang, and Serpong (BSD), and the surrounding areas. Your goods are picked up directly from your location and shipped to Bandung City and Greater Bandung by land. This service runs both ways, from Tangerang-Serpong to Bandung and back."
+      },
+      {
+        "q": "How do you guarantee the safety of goods during shipping?",
+        "a": "The safety of your goods is our top priority. Every shipment is handled by an experienced, professional team. Goods are packed and loaded to a high safety standard. Our truck fleet is well-maintained and properly secured. With over 25 years of experience, we have an excellent track record for shipping safety."
+      },
+      {
+        "q": "Can you ship goods from Bandung to Jakarta?",
+        "a": "Yes, we offer two-way shipping: from Jakarta-Tangerang-Serpong to Bandung and back. Our route covers Jakarta, Tangerang, Serpong (BSD), through to Bandung City and Greater Bandung. Contact us for more information on schedules and rates."
+      },
+      {
+        "q": "Does Transit serve business (B2B) shipping?",
+        "a": "Yes, B2B is our core service — covering the logistics needs of factories, manufacturing companies, distributors, and other businesses. We offer regular shipping contracts with fixed schedules, special rates for high volumes, and service tailored to your business's operational needs."
+      },
+      {
+        "q": "How long has Transit been in operation?",
+        "a": "Transit has been operating since 2001, making us one of the most experienced land freight companies on the Jakarta-Bandung route. With over 25 years of experience, we understand the ins and outs of logistics and shipping in the Jakarta-Bandung corridor."
+      }
+    ]
+  },
+  "Blog": {
+    "label": "Blog",
+    "title": "Jakarta-Bandung Freight Articles & Tips",
+    "subtitle": "Insights on freight services, logistics tips, and land shipping guides for the Jakarta-Bandung route to support your business needs.",
+    "empty": "Articles coming soon. Stay tuned for tips and information about Jakarta-Bandung freight shipping.",
+    "breadcrumbHome": "Home",
+    "breadcrumbBlog": "Blog",
+    "ctaHeading": "Need a trusted Jakarta–Bandung freight service?",
+    "ctaBody": "Get a free consultation and the best price quote for your business shipping needs.",
+    "ctaButton": "Chat via WhatsApp",
+    "relatedHeading": "More Articles",
+    "backLink": "← Back to Blog"
+  },
+  "Meta": {
+    "title": "Transit — Freight Forwarding & Trucking Jakarta Bandung",
+    "titleTemplate": "%s | Transit",
+    "description": "Transit - Trusted two-way freight forwarding and trucking service between Jakarta and Bandung since 2001. Fast, on-time, and secure shipping for your business needs.",
+    "keywords": [
+      "freight forwarder jakarta bandung",
+      "trucking service indonesia",
+      "land transport jakarta bandung",
+      "cargo delivery indonesia",
+      "b2b logistics indonesia",
+      "3pl partner indonesia",
+      "factory logistics jakarta",
+      "overland freight java",
+      "ftl ltl indonesia",
+      "bandung jakarta trucking"
+    ],
+    "ogTitle": "Transit — Freight Forwarding Jakarta Bandung Since 2001",
+    "ogDescription": "Trusted trucking service on the Jakarta-Bandung route. Fast, on-time, and secure shipping for your business needs.",
+    "ogImageAlt": "Transit — Freight Forwarding & Trucking Jakarta-Bandung",
+    "twitterTitle": "Transit — Freight Forwarding Jakarta Bandung",
+    "twitterDescription": "Trusted freight forwarding and trucking service on the Jakarta-Bandung route since 2001.",
+    "home": {
+      "title": "Transit — Freight Forwarding & Trucking Jakarta Bandung Since 2001",
+      "description": "Trusted two-way freight forwarding and trucking service across Jakarta, Tangerang, Serpong (BSD) ⇄ Bandung since 2001. Fast overland delivery, on time, secure, transparent pricing. B2B logistics solutions for factories & businesses. Free consultation via WhatsApp."
+    },
+    "blog": {
+      "title": "Blog — Freight & Logistics Tips Jakarta Bandung",
+      "description": "Read articles and tips about freight forwarding, shipping, logistics, and cargo transport on the Jakarta-Bandung route from Transit."
+    }
+  },
+  "Schema": {
+    "company": {
+      "description": "Trusted freight forwarding and trucking service on the Jakarta-Bandung route since 2001. Serving cargo shipping, industrial goods, and B2B logistics needs."
+    },
+    "bandungBranch": {
+      "name": "Transit — Bandung Branch",
+      "description": "Transit's Bandung branch — freight forwarding and trucking service on the Jakarta-Bandung route by land."
+    }
+  }
+}

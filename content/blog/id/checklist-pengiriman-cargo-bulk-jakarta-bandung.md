@@ -1,4 +1,5 @@
 ---
+translationKey: "checklist-pengiriman-cargo-bulk-jakarta-bandung"
 title: "Checklist Lengkap Persiapan Pengiriman Cargo Bulk Jakarta-Bandung"
 description: "Checklist praktis untuk mempersiapkan pengiriman barang dalam jumlah besar (bulk cargo) dari Jakarta ke Bandung. Pastikan setiap pengiriman lancar, aman, dan tepat waktu."
 date: "2026-09-15"
@@ -82,7 +83,7 @@ Checklist ini dibuat berdasarkan pengalaman bertahun-tahun dalam menangani pengi
 
 ---
 
-## Bagian 5: Koordinasi dengan Penerima di Bandung
+## Bagian 5: Koordinasi dengan Penerima di Bandung (atau di Jakarta, untuk Arah Sebaliknya)
 
 - [ ] Penerima sudah diberitahu tentang jadwal kedatangan estimasi
 - [ ] Penerima memastikan area bongkar muat tersedia

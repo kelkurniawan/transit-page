@@ -1222,6 +1222,8 @@ section { padding: 80px 0; }
     margin-bottom: 24px;
 }
 .blog-breadcrumb a { color: var(--blue); text-decoration: none; }
+.blog-back-link { color: var(--blue); font-weight: 600; text-decoration: none; }
+.blog-back-link:hover { text-decoration: underline; }
 .blog-breadcrumb a:hover { text-decoration: underline; }
 .blog-breadcrumb span { margin: 0 2px; }
 
@@ -1427,6 +1429,13 @@ section { padding: 80px 0; }
     .mobile-menu a { padding: 13px 0; }
     .mobile-menu .btn { min-height: 48px; }
 
+    /* Toggle bahasa aktif sejak i18n — tombolnya masih 37x28 tanpa ini */
+    .lang-toggle button {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 6px 10px;
+    }
+
     .contact-item a {
         display: inline-flex;
         align-items: center;
@@ -1440,6 +1449,15 @@ section { padding: 80px 0; }
     }
     .footer-links { gap: 0; }
     .logo { min-height: 44px; }
+
+    /* Link inline di halaman artikel: breadcrumb, tombol balik, link dalam artikel */
+    .blog-breadcrumb a,
+    .blog-post-content p > a,
+    .blog-back-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+    }
     .footer-social a { width: 44px; height: 44px; }
     .footer-social svg { width: 20px; height: 20px; }
 }

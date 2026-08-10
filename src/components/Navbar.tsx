@@ -1,16 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import LogoIcon from "./icons/LogoIcon";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const WA_LINK =
   "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
 
-// Toggle ID/EN belum berfungsi — aktifkan saat rencana i18n
-// (docs/superpowers/plans/2026-08-06-i18n-dwibahasa.md) selesai dikerjakan.
-const I18N_ENABLED = false;
-
-export default function Navbar() {
+export default function Navbar({
+  slugMap,
+}: {
+  /** Forwarded to LanguageSwitcher. See its doc comment for details. */
+  slugMap?: Record<string, string | null>;
+}) {
+  const t = useTranslations("Nav");
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,31 +29,26 @@ export default function Navbar() {
     <>
       <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
         <div className="container">
-          <a href="/" className="logo" aria-label="Transit — Beranda">
+          <Link href="/" className="logo" aria-label={t("home")}>
             <LogoIcon className="logo-icon" />
             <div className="logo-text">TRANSIT</div>
-          </a>
+          </Link>
           <ul className="nav-links">
-            <li><a href="/#tentang">Tentang Kami</a></li>
-            <li><a href="/#layanan">Layanan</a></li>
-            <li><a href="/#rute">Rute</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/#faq">FAQ</a></li>
-            <li><a href="/#kontak">Kontak</a></li>
+            <li><Link href="/#tentang">{t("about")}</Link></li>
+            <li><Link href="/#layanan">{t("services")}</Link></li>
+            <li><Link href="/#rute">{t("route")}</Link></li>
+            <li><Link href="/blog">{t("blog")}</Link></li>
+            <li><Link href="/#faq">{t("faq")}</Link></li>
+            <li><Link href="/#kontak">{t("contact")}</Link></li>
           </ul>
           <div className="nav-right">
-            {I18N_ENABLED && (
-              <div className="lang-toggle">
-                <button className="active" aria-label="Bahasa Indonesia">ID</button>
-                <button aria-label="English">EN</button>
-              </div>
-            )}
+            <LanguageSwitcher slugMap={slugMap} />
             <a href={WA_LINK} className="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener noreferrer">
-              Minta Penawaran
+              {t("quote")}
             </a>
             <button
               className={`hamburger${menuOpen ? " is-open" : ""}`}
-              aria-label="Menu"
+              aria-label={t("menu")}
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -60,19 +60,19 @@ export default function Navbar() {
       </nav>
       <button
         className={`mobile-menu-backdrop${menuOpen ? " active" : ""}`}
-        aria-label="Tutup menu"
+        aria-label={t("closeMenu")}
         tabIndex={menuOpen ? 0 : -1}
         onClick={() => setMenuOpen(false)}
       />
       <div id="mobile-menu" className={`mobile-menu${menuOpen ? " active" : ""}`}>
-        <a href="/#tentang" onClick={() => setMenuOpen(false)}>Tentang Kami</a>
-        <a href="/#layanan" onClick={() => setMenuOpen(false)}>Layanan</a>
-        <a href="/#rute" onClick={() => setMenuOpen(false)}>Rute</a>
-        <a href="/blog" onClick={() => setMenuOpen(false)}>Blog</a>
-        <a href="/#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
-        <a href="/#kontak" onClick={() => setMenuOpen(false)}>Kontak</a>
+        <Link href="/#tentang" onClick={() => setMenuOpen(false)}>{t("about")}</Link>
+        <Link href="/#layanan" onClick={() => setMenuOpen(false)}>{t("services")}</Link>
+        <Link href="/#rute" onClick={() => setMenuOpen(false)}>{t("route")}</Link>
+        <Link href="/blog" onClick={() => setMenuOpen(false)}>{t("blog")}</Link>
+        <Link href="/#faq" onClick={() => setMenuOpen(false)}>{t("faq")}</Link>
+        <Link href="/#kontak" onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
         <a href={WA_LINK} className="btn btn-wa" target="_blank" rel="noopener noreferrer">
-          Minta Penawaran
+          {t("quote")}
         </a>
       </div>
     </>

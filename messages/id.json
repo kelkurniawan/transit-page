@@ -1,0 +1,364 @@
+{
+  "Nav": {
+    "about": "Tentang Kami",
+    "services": "Layanan",
+    "route": "Rute",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Kontak",
+    "quote": "Minta Penawaran",
+    "menu": "Menu",
+    "home": "Transit — Beranda",
+    "closeMenu": "Tutup menu"
+  },
+  "Footer": {
+    "tagline": "Jasa ekspedisi dan angkutan barang terpercaya rute Jakarta-Bandung dua arah via jalur darat. Berpengalaman sejak 2001 melayani kebutuhan logistik dan pengiriman cargo untuk bisnis Anda.",
+    "navHeading": "Navigasi",
+    "contactHeading": "Kontak",
+    "headOffice": "Kantor Pusat: Jakarta Pusat, DKI Jakarta",
+    "branch": "Cabang: Jl. Caringin No. 35-39, Kota Bandung",
+    "copyright": "© 2001 — 2026 Transit. All rights reserved.",
+    "createdBy": "Created by"
+  },
+  "CTA": {
+    "heading": "Siap Mengirim Barang via Ekspedisi Jakarta-Bandung Dua Arah?",
+    "body": "Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran harga terbaik untuk kebutuhan jasa angkutan barang dan logistik bisnis Anda.",
+    "whatsappCta": "Chat WhatsApp Sekarang",
+    "servicesCta": "Lihat Layanan"
+  },
+  "Contact": {
+    "label": "Hubungi Kami",
+    "title": "Kantor Transit",
+    "intro": "Kunjungi kantor kami di Jakarta Pusat atau hubungi via WhatsApp untuk informasi lebih lanjut mengenai jasa ekspedisi dan angkutan barang Jakarta-Bandung dua arah.",
+    "headOfficeTitle": "Kantor Pusat — Jakarta",
+    "branchTitle": "Cabang — Bandung",
+    "mapsLink": "Lihat di Google Maps →",
+    "whatsappTitle": "WhatsApp",
+    "emailTitle": "Email",
+    "hoursTitle": "Jam Operasional",
+    "hoursValue": "Senin — Sabtu: 08:00 — 17:00 WIB",
+    "mapIframeTitleHQ": "Lokasi Kantor Pusat Transit di Jakarta Pusat",
+    "mapIframeTitleBranch": "Lokasi Cabang Transit di Jl. Caringin, Kota Bandung"
+  },
+  "WhatsApp": {
+    "label": "Chat via WhatsApp",
+    "floatLabel": "Chat dengan kami",
+    "floatAriaLabel": "Hubungi via WhatsApp"
+  },
+  "Hero": {
+    "badge": "Terpercaya Sejak 2001",
+    "titlePrefix": "Jasa Ekspedisi & Angkutan Barang",
+    "titleHighlight": "Jakarta — Bandung",
+    "titleSuffix": "Terpercaya",
+    "subtitle": "Pengiriman barang dua arah Jakarta ⇄ Bandung via jalur darat, dengan jadwal tetap setiap hari. Sejak 2001 dipercaya ribuan pabrik dan distributor — tepat waktu, aman, dan harga transparan sejak awal.",
+    "whatsappCta": "Minta Penawaran Gratis",
+    "servicesCta": "Lihat Layanan",
+    "statYears": "Tahun Beroperasi",
+    "statClients": "Klien Terlayani",
+    "statSupport": "Dukungan Pelanggan",
+    "imageAlt": "Truk ekspedisi Transit mengangkut barang via jalur darat rute dua arah Jakarta-Bandung dan Bandung-Jakarta",
+    "twoWayAriaLabel": "dua arah",
+    "onTimeStat": "99% Tepat Waktu",
+    "onTimeCaption": "Ribuan pengiriman sukses",
+    "trustConsultation": "Konsultasi gratis",
+    "trustNoHiddenFees": "Tanpa biaya tersembunyi",
+    "trustFastResponse": "Respons cepat"
+  },
+  "About": {
+    "label": "Tentang Kami",
+    "title": "Mitra Logistik Terpercaya untuk Bisnis Anda",
+    "subtitle": "Transit adalah perusahaan jasa ekspedisi dan angkutan barang yang telah berpengalaman melayani pengiriman rute Jakarta-Bandung sejak tahun 2001. Dengan lebih dari dua dekade pengalaman di industri transportasi dan logistik darat, kami memahami betul kebutuhan bisnis Anda akan pengiriman barang yang cepat, aman, dan dapat diandalkan. Kami melayani berbagai jenis cargo mulai dari bahan baku industri, produk manufaktur, hingga barang dagangan umum — semua dikirim dengan standar keamanan dan ketepatan waktu tertinggi.",
+    "imageAlt": "Gudang penyimpanan cargo dan barang logistik Transit untuk pengiriman Jakarta-Bandung",
+    "yearBadge": "Berdiri Sejak",
+    "features": [
+      {
+        "title": "Aman & Terjamin",
+        "desc": "Barang Anda dalam perlindungan terbaik selama proses pengiriman"
+      },
+      {
+        "title": "Tepat Waktu",
+        "desc": "Konsisten on-time delivery dengan jadwal pengiriman yang teratur"
+      },
+      {
+        "title": "Tim Profesional",
+        "desc": "Pengemudi berpengalaman dan terlatih dalam penanganan barang"
+      },
+      {
+        "title": "Layanan Fleksibel",
+        "desc": "Disesuaikan dengan kebutuhan logistik dan jadwal operasional Anda"
+      }
+    ]
+  },
+  "Services": {
+    "label": "Layanan Kami",
+    "title": "Solusi Jasa Angkutan Barang untuk Setiap Kebutuhan Bisnis",
+    "subtitle": "Kami menyediakan berbagai layanan ekspedisi dan angkutan barang via darat rute Jakarta-Bandung yang dapat disesuaikan dengan kebutuhan logistik bisnis Anda.",
+    "items": [
+      {
+        "title": "Angkutan Barang Reguler",
+        "desc": "Layanan pengiriman barang reguler rute Jakarta-Bandung dengan jadwal tetap setiap hari dan harga kompetitif. Cocok untuk kebutuhan pengiriman rutin bisnis Anda.",
+        "features": [
+          "Jadwal pengiriman harian",
+          "Estimasi 1–2 hari kerja",
+          "Harga kompetitif"
+        ]
+      },
+      {
+        "title": "Pengiriman Ekspres (Same-Day)",
+        "desc": "Butuh pengiriman cepat? Layanan ekspres kami memastikan barang Anda tiba di tujuan di hari yang sama. Ideal untuk pengiriman mendesak.",
+        "features": [
+          "Tiba di hari yang sama",
+          "Prioritas penanganan",
+          "Untuk kiriman mendesak"
+        ]
+      },
+      {
+        "title": "Kargo Industri & Manufaktur",
+        "desc": "Layanan khusus untuk pengiriman cargo dan barang industri skala besar — bahan baku pabrik, produk manufaktur, mesin, tekstil, dan elektronik.",
+        "features": [
+          "Volume & berat besar",
+          "Penanganan profesional",
+          "Kontrak jangka panjang B2B"
+        ]
+      }
+    ]
+  },
+  "WhyUs": {
+    "label": "Track Record Kami",
+    "title": "Dipercaya oleh Ratusan Bisnis di Jakarta dan Bandung",
+    "subtitle": "Kami bangga telah menjadi mitra jasa ekspedisi dan logistik terpercaya bagi pabrik, distributor, dan perusahaan di koridor Jakarta-Bandung selama lebih dari dua dekade.",
+    "items": [
+      {
+        "number": "25+",
+        "title": "Tahun Pengalaman",
+        "desc": "Beroperasi sejak 2001 dengan rekam jejak pengiriman yang terbukti dan konsisten"
+      },
+      {
+        "number": "99%",
+        "title": "Tepat Waktu",
+        "desc": "Tingkat ketepatan waktu pengiriman yang konsisten — barang tiba sesuai jadwal"
+      },
+      {
+        "number": "1000+",
+        "title": "Klien Puas",
+        "desc": "Ribuan pelanggan bisnis yang mempercayakan pengiriman barang kepada kami"
+      },
+      {
+        "number": "0%",
+        "title": "Kerusakan Barang",
+        "desc": "Komitmen penuh terhadap keamanan dan keutuhan setiap barang yang dikirim"
+      }
+    ]
+  },
+  "PainGain": {
+    "label": "Kenapa Memilih Transit",
+    "title": "Masalah Pengiriman Anda, Kami Selesaikan",
+    "subtitle": "Pengiriman Jakarta-Bandung yang andal tanpa drama. Inilah yang Anda dapatkan saat mempercayakan barang Anda kepada Transit.",
+    "ctaLabel": "Konsultasi Gratis via WhatsApp",
+    "items": [
+      {
+        "problem": "Sering telat?",
+        "title": "Tepat Waktu",
+        "desc": "Jadwal tetap setiap hari. Produksi bisnis Anda tidak terganggu."
+      },
+      {
+        "problem": "Barang rusak?",
+        "title": "Aman Sampai Tujuan",
+        "desc": "Ditangani tim profesional. Track record aman 25+ tahun."
+      },
+      {
+        "problem": "Biaya tersembunyi?",
+        "title": "Harga Transparan",
+        "desc": "Tarif jelas di awal, tanpa biaya kejutan. Hemat untuk volume besar."
+      },
+      {
+        "problem": "Susah dihubungi?",
+        "title": "Selalu Responsif",
+        "desc": "Update real-time langsung via WhatsApp. Mudah dikoordinasikan."
+      },
+      {
+        "problem": "Tak bisa diandalkan?",
+        "title": "Siap Jangka Panjang",
+        "desc": "Kontrak pengiriman reguler untuk rantai pasok bisnis Anda."
+      },
+      {
+        "problem": "Volume besar?",
+        "title": "Armada Lengkap",
+        "desc": "Dari paket kecil hingga full truck load (FTL). Semua terlayani."
+      }
+    ]
+  },
+  "Process": {
+    "label": "Cara Kerja",
+    "title": "Proses Pengiriman Barang yang Mudah dan Cepat",
+    "subtitle": "Hanya empat langkah sederhana untuk mengirimkan barang Anda melalui jasa ekspedisi kami.",
+    "steps": [
+      {
+        "title": "Hubungi Kami",
+        "desc": "Chat via WhatsApp untuk konsultasi gratis mengenai kebutuhan pengiriman barang Anda"
+      },
+      {
+        "title": "Dapatkan Penawaran",
+        "desc": "Kami berikan estimasi biaya dan jadwal pengiriman terbaik sesuai jenis dan volume barang"
+      },
+      {
+        "title": "Pickup Barang",
+        "desc": "Tim kami menjemput barang langsung di lokasi Anda (door-to-door service) sesuai jadwal"
+      },
+      {
+        "title": "Barang Sampai Tujuan",
+        "desc": "Barang tiba dengan aman dan tepat waktu di alamat tujuan di Jakarta atau Bandung"
+      }
+    ]
+  },
+  "Route": {
+    "label": "Cakupan Rute Ekspedisi",
+    "title": "Jakarta, Tangerang, Serpong — Kota Bandung",
+    "subtitle": "Rute utama jasa angkutan barang kami menghubungkan kawasan Jakarta, Tangerang, dan Serpong (BSD) dengan Kota Bandung melalui jalur darat yang efisien dan aman. Kami melayani pengiriman dua arah — dari Jakarta-Tangerang-Serpong ke Bandung maupun sebaliknya — menjangkau seluruh area Jabodetabek bagian barat hingga Bandung Raya.",
+    "items": [
+      {
+        "title": "Pickup dari Jabodetabek & Bandung",
+        "desc": "Penjemputan barang dari seluruh area Jakarta, Tangerang, Serpong, BSD, Bekasi, maupun dari Bandung Raya"
+      },
+      {
+        "title": "Pengiriman via Jalur Darat",
+        "desc": "Armada truk yang terawat dengan pengemudi berpengalaman di rute Jakarta-Bandung"
+      },
+      {
+        "title": "Delivery ke Bandung Raya & Jabodetabek",
+        "desc": "Pengantaran langsung ke alamat tujuan, baik di Bandung Raya maupun kembali ke area Jabodetabek"
+      }
+    ],
+    "jabodetabekChips": [
+      "Jakarta",
+      "Tangerang",
+      "Serpong",
+      "BSD",
+      "Bekasi"
+    ],
+    "jabodetabekLabel": "Area Jabodetabek",
+    "bandungChips": [
+      "Kota Bandung",
+      "Kab. Bandung",
+      "Bandung Barat"
+    ],
+    "bandungLabel": "Area Bandung Raya",
+    "mapAriaLabel": "Peta rute ekspedisi dua arah Jakarta–Bandung dan Bandung–Jakarta, jarak 150km",
+    "mapCaption": "Via Jalur Darat"
+  },
+  "FAQ": {
+    "label": "Pertanyaan Umum",
+    "title": "Frequently Asked Questions (FAQ)",
+    "subtitle": "Temukan jawaban untuk pertanyaan yang sering diajukan mengenai layanan jasa ekspedisi dan angkutan barang Jakarta-Bandung kami.",
+    "items": [
+      {
+        "q": "Berapa biaya jasa ekspedisi Jakarta Bandung?",
+        "a": "Biaya pengiriman barang rute Jakarta-Bandung (dua arah) bervariasi tergantung jenis barang, volume, dan berat. Kami menawarkan harga kompetitif untuk pengiriman reguler maupun ekspres, baik dari Jakarta ke Bandung maupun sebaliknya. Hubungi kami via WhatsApp untuk mendapatkan penawaran harga terbaik sesuai kebutuhan pengiriman Anda."
+      },
+      {
+        "q": "Berapa lama waktu pengiriman rute Jakarta-Bandung (dua arah)?",
+        "a": "Pengiriman reguler memakan waktu 1-2 hari kerja, sementara layanan ekspres bisa sampai di hari yang sama (same-day delivery) tergantung waktu pickup — berlaku untuk kedua arah, baik dari Jakarta ke Bandung maupun sebaliknya. Kami memiliki jadwal pengiriman tetap setiap hari untuk memastikan barang Anda tiba tepat waktu."
+      },
+      {
+        "q": "Jenis barang apa saja yang bisa dikirim?",
+        "a": "Kami melayani pengiriman berbagai jenis barang termasuk bahan baku industri, produk manufaktur, elektronik, tekstil, spare part mesin, peralatan kantor, dan barang dagangan umum. Untuk barang dengan penanganan khusus, silakan konsultasikan terlebih dahulu dengan tim kami."
+      },
+      {
+        "q": "Apakah ada layanan pickup barang dari lokasi pengirim?",
+        "a": "Ya, kami menyediakan layanan door-to-door pickup dari lokasi Anda di area Jakarta, Tangerang, Serpong (BSD), Bekasi, maupun dari Bandung Raya. Tim kami akan menjemput barang sesuai jadwal yang telah disepakati, dan mengantarkannya langsung ke alamat tujuan — baik ke Kota Bandung dan sekitarnya, maupun kembali ke area Jabodetabek."
+      },
+      {
+        "q": "Apakah Transit melayani pengiriman dari Tangerang dan Serpong (BSD) ke Bandung?",
+        "a": "Ya, area penjemputan kami mencakup Jakarta, Tangerang, dan Serpong (BSD), serta sekitarnya. Barang Anda akan dijemput langsung dari lokasi dan dikirim ke Kota Bandung dan Bandung Raya via jalur darat. Layanan ini tersedia dua arah, baik dari Tangerang-Serpong ke Bandung maupun sebaliknya."
+      },
+      {
+        "q": "Bagaimana jaminan keamanan barang selama pengiriman?",
+        "a": "Keamanan barang adalah prioritas utama kami. Setiap pengiriman ditangani oleh tim profesional yang berpengalaman. Barang dikemas dan dimuat dengan standar keamanan tinggi. Armada truk kami terawat dengan baik dan dilengkapi pengamanan yang memadai. Dengan pengalaman lebih dari 25 tahun, kami memiliki rekam jejak keamanan pengiriman yang sangat baik."
+      },
+      {
+        "q": "Apakah bisa mengirim barang dari Bandung ke Jakarta?",
+        "a": "Ya, kami melayani pengiriman dua arah: dari Jakarta-Tangerang-Serpong ke Bandung dan sebaliknya. Rute kami mencakup area Jakarta, Tangerang, Serpong (BSD), hingga Kota Bandung dan Bandung Raya. Hubungi kami untuk informasi lebih lanjut mengenai jadwal dan tarif pengiriman."
+      },
+      {
+        "q": "Apakah Transit melayani pengiriman untuk perusahaan (B2B)?",
+        "a": "Ya, layanan utama kami adalah B2B — melayani kebutuhan logistik pabrik, perusahaan manufaktur, distributor, dan bisnis lainnya. Kami menyediakan kontrak pengiriman reguler dengan jadwal tetap, harga khusus untuk volume besar, dan layanan yang dapat disesuaikan dengan kebutuhan operasional bisnis Anda."
+      },
+      {
+        "q": "Sejak kapan Transit beroperasi?",
+        "a": "Transit telah beroperasi sejak tahun 2001, menjadikan kami salah satu perusahaan jasa ekspedisi darat rute Jakarta-Bandung yang paling berpengalaman. Dengan lebih dari 25 tahun pengalaman, kami memahami seluk-beluk logistik dan pengiriman barang di koridor Jakarta-Bandung."
+      }
+    ]
+  },
+  "Blog": {
+    "label": "Blog",
+    "title": "Artikel & Tips Ekspedisi Jakarta Bandung",
+    "subtitle": "Informasi seputar jasa pengiriman barang, tips logistik, dan panduan ekspedisi darat rute Jakarta-Bandung untuk kebutuhan bisnis Anda.",
+    "empty": "Artikel segera hadir. Nantikan tips dan informasi seputar ekspedisi Jakarta-Bandung.",
+    "breadcrumbHome": "Beranda",
+    "breadcrumbBlog": "Blog",
+    "ctaHeading": "Butuh jasa ekspedisi Jakarta–Bandung yang terpercaya?",
+    "ctaBody": "Konsultasi gratis dan dapatkan penawaran harga terbaik untuk kebutuhan pengiriman bisnis Anda.",
+    "ctaButton": "Chat via WhatsApp",
+    "relatedHeading": "Artikel Lainnya",
+    "backLink": "← Kembali ke Blog"
+  },
+  "Meta": {
+    "title": "Transit — Jasa Ekspedisi & Angkutan Barang Jakarta Bandung",
+    "titleTemplate": "%s | Transit",
+    "description": "Transit - Jasa ekspedisi dan angkutan barang terpercaya rute dua arah Jakarta-Bandung dan Bandung-Jakarta sejak 2001. Pengiriman cepat, tepat waktu, dan aman untuk kebutuhan bisnis Anda.",
+    "keywords": [
+      "jasa ekspedisi jakarta bandung",
+      "cargo jakarta bandung",
+      "angkutan barang jakarta bandung",
+      "jasa antar barang jakarta bandung",
+      "jasa kirim barang jakarta bandung",
+      "transportasi darat jakarta bandung",
+      "ekspedisi murah jakarta bandung",
+      "pengiriman barang jakarta bandung",
+      "logistik jakarta bandung",
+      "trucking jakarta bandung",
+      "jasa angkutan barang",
+      "ekspedisi darat jakarta bandung",
+      "freight forwarding jakarta bandung",
+      "ekspedisi tangerang bandung",
+      "ekspedisi serpong bandung",
+      "ekspedisi bsd bandung",
+      "cargo serpong bandung",
+      "pengiriman barang tangerang ke bandung",
+      "ekspedisi b2b jakarta bandung",
+      "jasa pengiriman pabrik jakarta bandung",
+      "jasa ekspedisi bandung jakarta",
+      "cargo bandung jakarta",
+      "angkutan barang bandung jakarta",
+      "pengiriman barang bandung jakarta",
+      "ekspedisi bandung ke jakarta",
+      "kirim barang bandung ke jakarta",
+      "trucking bandung jakarta",
+      "ekspedisi bandung tangerang",
+      "cargo bandung serpong bsd",
+      "ekspedisi dua arah jakarta bandung"
+    ],
+    "ogTitle": "Transit — Jasa Ekspedisi Jakarta Bandung Sejak 2001",
+    "ogDescription": "Layanan angkutan barang terpercaya rute Jakarta-Bandung. Pengiriman cepat, tepat waktu, dan aman untuk kebutuhan bisnis Anda.",
+    "ogImageAlt": "Transit — Jasa Ekspedisi & Angkutan Barang Jakarta-Bandung",
+    "twitterTitle": "Transit — Jasa Ekspedisi Jakarta Bandung",
+    "twitterDescription": "Jasa ekspedisi dan angkutan barang terpercaya rute Jakarta-Bandung sejak 2001.",
+    "home": {
+      "title": "Transit — Jasa Ekspedisi & Angkutan Barang Jakarta Bandung Sejak 2001",
+      "description": "Jasa ekspedisi & angkutan barang terpercaya rute dua arah Jakarta, Tangerang, Serpong (BSD) ⇄ Bandung sejak 2001. Pengiriman cepat via darat, tepat waktu, aman, harga transparan. Solusi logistik B2B untuk pabrik & bisnis. Konsultasi gratis via WhatsApp."
+    },
+    "blog": {
+      "title": "Blog — Tips Ekspedisi & Logistik Jakarta Bandung",
+      "description": "Baca artikel dan tips seputar jasa ekspedisi, pengiriman barang, logistik, dan angkutan cargo rute Jakarta-Bandung dari Transit."
+    }
+  },
+  "Schema": {
+    "company": {
+      "description": "Jasa ekspedisi dan angkutan barang terpercaya rute Jakarta-Bandung sejak 2001. Melayani pengiriman cargo, barang industri, dan kebutuhan logistik B2B."
+    },
+    "bandungBranch": {
+      "name": "Transit — Cabang Bandung",
+      "description": "Cabang Bandung Transit — jasa ekspedisi dan angkutan barang rute Jakarta-Bandung via jalur darat."
+    }
+  }
+}

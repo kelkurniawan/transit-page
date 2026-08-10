@@ -1,4 +1,5 @@
 ---
+translationKey: "ftl-vs-ltl-memilih-muatan-truk-untuk-bisnis"
 title: "FTL vs LTL: Memilih Jenis Muatan Truk yang Tepat untuk Bisnis Anda"
 description: "Pahami perbedaan Full Truck Load (FTL) dan Less Than Truck Load (LTL) untuk pengiriman barang Jakarta-Bandung. Panduan memilih yang lebih hemat dan efisien untuk bisnis."
 date: "2026-07-14"
@@ -103,7 +104,7 @@ Untuk pengiriman massal → **FTL jelas lebih tepat**
 
 ## Layanan FTL dan LTL Transit untuk Rute Jakarta-Bandung
 
-Transit menyediakan kedua jenis layanan dengan armada yang sesuai:
+Transit menyediakan kedua jenis layanan dengan armada yang sesuai, untuk kedua arah rute:
 
 **Untuk FTL:**
 - Truk engkel (kapasitas ~3-4 ton)
