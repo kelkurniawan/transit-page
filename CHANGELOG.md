@@ -55,6 +55,48 @@ Perubahan yang sudah diimplementasikan tapi belum di-deploy ke production.
 
 ---
 
+## [0.9.0] — 2026-08-10 — Situs Dwibahasa ID/EN
+
+Menggabungkan implementasi next-intl dengan overhaul layout mobile 0.8.0.
+Rute pindah ke `src/app/[locale]/`; Indonesia tetap tanpa prefix (`/`), Inggris
+di `/en` (`localePrefix: 'as-needed'`).
+
+### Added
+- **Situs dwibahasa penuh** — next-intl dengan deteksi locale via middleware,
+  seluruh string UI di `messages/id.json` dan `messages/en.json`, 14 artikel blog
+  diterjemahkan (`content/blog/en/`), sitemap dua bahasa 32 URL, dan `hreflang`
+  alternates yang menunjuk silang antar locale.
+- **Toggle bahasa berfungsi** — `LanguageSwitcher` mempertahankan halaman saat
+  berpindah, dan di halaman artikel memetakan slug ke pasangannya lewat
+  `translationKey` (slug ID dan EN sengaja berbeda, jadi tidak bisa dibandingkan
+  langsung).
+
+### Changed
+- **Copy hero baru dari 0.8.0 dipindah ke file pesan** dan diterjemahkan ke
+  Inggris: subtitle fokus benefit, CTA "Minta Penawaran Gratis" / "Get a Free
+  Quote", strip kepercayaan (Konsultasi gratis · Tanpa biaya tersembunyi ·
+  Respons cepat).
+- **`MobileCTABar` jadi locale-aware** — label lewat `useTranslations("Nav")` dan
+  `Link` locale-aware, sebelumnya hardcoded Bahasa Indonesia.
+- **Flag `I18N_ENABLED` dihapus** — flag itu dipasang di 0.8.0 untuk
+  menyembunyikan toggle ID/EN yang waktu itu mati. Sekarang toggle-nya berfungsi.
+
+### Fixed
+- **Toggle bahasa 37×28 → 44×44.** Toggle baru terlihat lagi setelah i18n aktif,
+  jadi ukurannya belum pernah kena audit target sentuh di 0.8.0.
+- **Link inline di halaman artikel** (breadcrumb, link balik, link dalam artikel)
+  dinaikkan ke 44px. Link balik dipindah dari style inline ke `.blog-back-link`.
+
+### Notes
+- Semua perbaikan mobile 0.8.0 dipindahkan ke struktur `[locale]` dan
+  terverifikasi utuh di kedua bahasa: headline y=150, CTA y=415–538, foto y=773.
+  Nol target sentuh di bawah 44px, nol horizontal overflow di 375px dan 1280px.
+- `next build` memunculkan peringatan bahwa konvensi file `middleware`
+  deprecated dan disarankan pindah ke `proxy`. Belum dikerjakan — perlu dicek
+  dulu kompatibilitasnya dengan middleware next-intl.
+
+---
+
 ## [0.8.0] — 2026-08-06 — Overhaul Layout Mobile
 
 Audit layout mobile: halaman terasa belum profesional di ponsel. Semua angka di bawah
