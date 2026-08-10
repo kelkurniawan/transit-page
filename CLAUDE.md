@@ -9,6 +9,15 @@
 **Operating since:** 2001
 **Target customers:** Factories, distributors, B2B businesses
 
+### Business model: hub-and-spoke (read this before writing any copy)
+
+The operation is **hub-and-spoke**, not a mesh of point-to-point routes:
+
+- **Line-haul (trunk):** Jakarta ⇄ Bandung, genuinely **two-way**. Both directions are real freight movements, run daily. This is the only long-distance leg.
+- **Spokes:** the surrounding areas are served as **pickup and delivery from the pools/warehouses** in Jakarta and Bandung — Jabodetabek side: Tangerang, Serpong, BSD, Bekasi · Bandung side: Kota Bandung, Kabupaten Bandung, Bandung Barat.
+
+**Copy constraint:** never imply direct point-to-point trucking between a spoke and the far city (e.g. a dedicated Bandung → Bekasi truck). The accurate framing is *line-haul between the two cities, plus local pickup/delivery around each pool*. A shipment from Bandung to Bekasi rides the Bandung → Jakarta line-haul and is delivered on to Bekasi from the Jakarta side. Two-way claims about the **Jakarta ⇄ Bandung route itself** are always true and must appear in **both** languages; two-way claims about a **spoke** must be phrased so they resolve back to the line-haul. Do not invent capability beyond this when writing new articles.
+
 ## Tech Stack
 
 - **Framework:** Next.js 16 (App Router) with TypeScript
@@ -123,7 +132,7 @@ The site is bilingual (Indonesian + English), powered by **next-intl**.
 - **Adding a new article — always add BOTH language versions**, one `.md` file in `content/blog/id/` and its paired `.md` file in `content/blog/en/`, with **matching `translationKey` values** (the Indonesian slug). Skipping one side breaks things silently:
   - The article won't appear in that locale's blog listing or in `sitemap.ts`'s output.
   - The `LanguageSwitcher` on that article has no pair to link to and falls back to the blog listing instead of the sibling article.
-  - An English-preferring visitor (`Accept-Language: en`) who reaches the Indonesian article URL gets redirected by next-intl's locale detection to `/en/blog/<same-slug>`. Since ID/EN slugs differ, that slug normally would not exist under `en` and would 404 — `src/app/[locale]/blog/[slug]/page.tsx` specifically detects this cross-locale mismatch and redirects to the real paired URL, but only when a pair exists. With only one side published, that visitor hits a dead end.
+  - An English-preferring visitor (`Accept-Language: en`) who reaches the Indonesian article URL gets redirected by next-intl's locale detection to `/en/blog/<same-slug>`. Since ID/EN slugs differ, that slug normally would not exist under `en` and would 404 — `src/app/[locale]/blog/[slug]/page.tsx` specifically detects this cross-locale mismatch and redirects to the real paired URL, but only when a pair exists. With only one side published there is no pair, so that visitor is redirected to the blog listing for their locale instead — a working page they can browse, but the article itself is unreachable in their language.
 
 ## Coding Conventions
 
