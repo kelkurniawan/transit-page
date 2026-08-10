@@ -19,6 +19,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# agent worktrees (git worktree, jangan pernah di-commit)
+.claude/worktrees/
+
 # editor
 .vscode/
 .idea/

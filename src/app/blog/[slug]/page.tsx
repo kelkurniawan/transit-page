@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import MobileCTABar from "@/components/MobileCTABar";
 
 const SITE_URL = "https://transitexpress.my.id";
 const WA_LINK =
@@ -145,6 +146,7 @@ export default async function BlogPostPage({
       </article>
       <Footer />
       <WhatsAppFloat />
+      <MobileCTABar />
     </>
   );
 }

@@ -3,6 +3,7 @@ import { getAllPosts } from "@/lib/blog";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import MobileCTABar from "@/components/MobileCTABar";
 
 export const metadata: Metadata = {
   title: "Blog — Tips Ekspedisi & Logistik Jakarta Bandung",
@@ -53,6 +54,7 @@ export default function BlogPage() {
       </main>
       <Footer />
       <WhatsAppFloat />
+      <MobileCTABar />
     </>
   );
 }

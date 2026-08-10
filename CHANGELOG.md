@@ -10,6 +10,70 @@ Perubahan yang sudah diimplementasikan tapi belum di-deploy ke production.
 
 ---
 
+## [0.8.0] — 2026-08-06 — Overhaul Layout Mobile
+
+Audit layout mobile: halaman terasa belum profesional di ponsel. Semua angka di bawah
+diukur langsung di viewport 375×812 dan 320×667.
+
+### Fixed
+- **🔴 Layar pertama mobile kosong dari pesan bisnis** — `.hero-visual { order: -1 }`
+  menaruh foto truk di atas teks, sehingga `<h1>` baru mulai di y=818 — di bawah lipatan.
+  Pengunjung ponsel hanya melihat foto. Kini urutannya teks dulu (badge y=96, headline
+  y=150, CTA y=415–538), foto menyusul sebagai banner 16:10 di y=773.
+- **🔴 Foto hero 620px, seharusnya 360px** — atribut `<img height="620">` adalah
+  presentational hint CSS yang mengalahkan `aspect-ratio: 4/5` selama `height` bukan
+  `auto`. Hasilnya kotak 288×620 (rasio 1:2.15). Ditambahkan `height: auto` pada
+  `.hero-image`; desktop ikut terkoreksi jadi 460×575 (sebelumnya 460×620).
+- **🔴 `--gray-300` tidak pernah didefinisikan di `:root`** — `.btn-outline-white`
+  memakainya untuk `border`, sehingga deklarasinya invalid dan computed style-nya jadi
+  `border-style: none`. Tombol "Lihat Layanan" di section CTA tampil sebagai teks
+  telanjang tanpa kotak. Variabel ditambahkan (`#cbd5e1`).
+- **Teks tombol WhatsApp abu-abu di menu mobile** — `.mobile-menu a` (spesifisitas 0,1,1)
+  menang atas `.btn-wa` (0,1,0). Ditambahkan `.mobile-menu a.btn-wa { color: white }`.
+- **Toggle bahasa ID/EN mati** — kedua tombol tidak punya `onClick`. Disembunyikan di
+  balik flag `I18N_ENABLED` di `Navbar.tsx`; set `true` saat rencana i18n
+  (`docs/superpowers/plans/2026-08-06-i18n-dwibahasa.md`) rampung.
+- **Menu mobile tidak bisa ditutup dengan tap di luar** — ditambahkan backdrop, plus
+  hamburger kini beranimasi jadi ikon X dan punya `aria-expanded`/`aria-controls`.
+
+### Changed
+- **Tinggi halaman mobile 14.008px → 12.019px.** `solusi` 2.146→1.378, `hero`
+  1.533→1.014, `process` 1.043→736, `services` 1.543→1.338.
+  - `.solusi-card` dan `.process-step` jadi baris ikon+teks (grid 2 kolom, penempatan
+    eksplisit tanpa ubah markup) — 144px dan 101px per item, sebelumnya ~300px.
+  - Padding, gap, dan ukuran ikon kartu dikecilkan di breakpoint mobile.
+- **Statistik hero tidak lagi pecah 2+1.** `.hero-stat { min-width: calc(50% - 10px) }`
+  membuat "24/7" terlempar sendirian ke baris ketiga. Diganti grid 3 kolom.
+- **Copy hero dipertajam** — paragraf diringkas dari 6 baris jadi 5 dan difokuskan ke
+  benefit ("jadwal tetap setiap hari", "ribuan pabrik dan distributor", "harga transparan
+  sejak awal"). CTA primer "Chat via WhatsApp" → "Minta Penawaran Gratis". Ditambahkan
+  strip kepercayaan (`.hero-trust`): Konsultasi gratis · Tanpa biaya tersembunyi ·
+  Respons cepat.
+- **Tipografi mobile minimum 14px.** Sebelumnya 18 elemen di 13,6px, 12 di 12,8px, 8 di
+  12px. Yang sengaja dibiarkan di bawah 14px hanya label/pill (`.solusi-problem`,
+  `.coverage-group-label`, `.map-label`) di 12–12,8px.
+- **Target sentuh: 19 pelanggar → 0.** Hamburger 32×26→44×44, link footer 18px→baris
+  penuh 44px, ikon sosial 36→44, link kontak dan logo ≥44px.
+
+### Added
+- **`MobileCTABar`** — CTA lengket di bawah layar (≤768px) berisi "Minta Penawaran" +
+  "Kontak", menggantikan bubble WhatsApp melayang yang menimpa copyright footer dan badge
+  hero. `.wa-float` disembunyikan di mobile; `.footer` dapat `padding-bottom: 92px`.
+  Dipasang di homepage, `/blog`, dan `/blog/[slug]` — link Kontak pakai `/#kontak`
+  (absolut) agar berfungsi dari halaman blog.
+- **Fallback animasi** — `.fade-in` mulai dari `opacity: 0` dan hanya dibuka oleh
+  IntersectionObserver, jadi seluruh konten tak terlihat kalau JS gagal atau lambat.
+  Ditambahkan blok `prefers-reduced-motion: reduce` dan `<style>` di dalam `<noscript>`.
+
+### Notes
+- Verified: tanpa horizontal overflow di 320px, 375px, dan 1280px. Layout desktop tidak
+  berubah selain koreksi rasio foto hero dan border tombol outline. `npm run build`
+  sukses, TypeScript bersih, 19 halaman statis ter-generate.
+- Bar CTA mobile dikecilkan font & padding-nya di bawah 400px supaya label "Minta
+  Penawaran" tidak membungkus dan menaikkan tinggi bar dari 73px jadi 94px.
+
+---
+
 ## [0.7.0] — 2026-06-13 — Cabang Bandung
 
 ### Added
