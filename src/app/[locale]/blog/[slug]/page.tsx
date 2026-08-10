@@ -34,10 +34,21 @@ export async function generateMetadata({
   if (!post) return {};
   const path = locale === "id" ? `/blog/${slug}` : `/en/blog/${slug}`;
   const url = `${SITE_URL}${path}`;
+
+  const languages: Record<string, string> = {};
+  for (const l of routing.locales) {
+    const pairedSlug = l === locale ? slug : getTranslatedSlug(post.translationKey, l);
+    if (!pairedSlug) continue;
+    languages[l] = l === "id" ? `/blog/${pairedSlug}` : `/en/blog/${pairedSlug}`;
+  }
+  if (languages.id) {
+    languages["x-default"] = languages.id;
+  }
+
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: path },
+    alternates: { canonical: path, languages },
     authors: [{ name: "Transit" }],
     openGraph: {
       title: post.title,
