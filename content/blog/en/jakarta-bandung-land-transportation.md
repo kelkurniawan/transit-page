@@ -36,9 +36,9 @@ Land shipping doesn't depend on rigid flight schedules. With the right coordinat
 
 ## The Jakarta-Bandung Route and Road Conditions
 
-The Jakarta-Bandung land route has two main route options:
+The Jakarta-Bandung land route runs via one main route:
 
-### The Cipularang Toll Road (Primary Route)
+### The Cipularang Toll Road (Main Route)
 
 The Cikampek-Purwakarta-Padalarang Toll Road (Cipularang) is the most efficient route, covering roughly 150 km with a normal travel time of 2-3 hours. This route runs through:
 

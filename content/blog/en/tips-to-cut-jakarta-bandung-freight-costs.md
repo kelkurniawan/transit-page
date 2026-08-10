@@ -2,7 +2,7 @@
 translationKey: "tips-hemat-angkutan-barang-jakarta-bandung"
 title: "8 Tips to Cut Jakarta-Bandung Freight Costs for Your Business"
 description: "Practical strategies to reduce Jakarta-Bandung freight and shipping costs without sacrificing quality or delivery safety."
-date: "2026-08-18"
+date: "2026-08-10"
 tag: "Logistics Tips"
 ---
 

@@ -2,7 +2,7 @@
 translationKey: "pengiriman-barang-bekasi-ke-bandung"
 title: "Jasa Pengiriman Barang dari Bekasi ke Bandung: Rute, Waktu, dan Tarif"
 description: "Layanan angkutan barang dan ekspedisi dari Bekasi ke Bandung. Informasi rute, estimasi waktu tempuh, area pickup di Bekasi, dan tips mendapatkan tarif terbaik."
-date: "2026-09-01"
+date: "2026-08-10"
 tag: "Area Layanan"
 ---
 

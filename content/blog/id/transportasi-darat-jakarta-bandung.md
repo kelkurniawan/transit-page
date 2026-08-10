@@ -36,9 +36,9 @@ Pengiriman darat tidak bergantung pada jadwal penerbangan yang kaku. Dengan koor
 
 ## Rute dan Kondisi Jalan Jakarta-Bandung
 
-Perjalanan darat Jakarta-Bandung memiliki dua pilihan utama rute:
+Perjalanan darat Jakarta-Bandung menempuh satu rute utama:
 
-### Tol Cipularang (Pilihan Utama)
+### Tol Cipularang (Rute Utama)
 
 Tol Cikampek-Purwakarta-Padalarang (Cipularang) adalah rute paling efisien dengan jarak sekitar 150 km dan waktu tempuh normal 2-3 jam. Rute ini melalui:
 

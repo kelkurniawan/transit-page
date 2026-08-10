@@ -2,7 +2,7 @@
 translationKey: "cara-packing-barang-cargo-yang-aman"
 title: "How to Pack Cargo Correctly for Long-Distance Shipping"
 description: "A complete guide to packing cargo for long-distance land shipping like Jakarta-Bandung. Tips on choosing materials, packing technique, and correct labeling."
-date: "2026-08-11"
+date: "2026-08-10"
 tag: "Packing Tips"
 ---
 

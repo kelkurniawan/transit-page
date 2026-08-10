@@ -2,7 +2,7 @@
 translationKey: "tips-hemat-angkutan-barang-jakarta-bandung"
 title: "8 Tips Hemat Biaya Angkutan Barang Jakarta-Bandung untuk Bisnis"
 description: "Strategi praktis untuk menghemat biaya angkutan barang dan jasa ekspedisi Jakarta-Bandung tanpa mengorbankan kualitas dan keamanan pengiriman."
-date: "2026-08-18"
+date: "2026-08-10"
 tag: "Tips Logistik"
 ---
 

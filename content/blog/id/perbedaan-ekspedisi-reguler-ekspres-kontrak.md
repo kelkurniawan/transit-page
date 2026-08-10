@@ -2,7 +2,7 @@
 translationKey: "perbedaan-ekspedisi-reguler-ekspres-kontrak"
 title: "Layanan Ekspedisi Reguler, Ekspres, dan Kontrak: Mana yang Tepat untuk Bisnis?"
 description: "Penjelasan perbedaan layanan ekspedisi reguler, ekspres, dan kontrak untuk pengiriman barang Jakarta-Bandung. Panduan memilih sesuai kebutuhan dan anggaran bisnis."
-date: "2026-09-08"
+date: "2026-08-10"
 tag: "Panduan"
 ---
 

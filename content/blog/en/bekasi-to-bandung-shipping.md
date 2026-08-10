@@ -2,7 +2,7 @@
 translationKey: "pengiriman-barang-bekasi-ke-bandung"
 title: "Freight Shipping from Bekasi to Bandung: Routes, Timing, and Rates"
 description: "Freight and cargo shipping between Bekasi and Bandung. Route details, estimated travel time, pickup areas in Bekasi, and tips for getting the best rate."
-date: "2026-09-01"
+date: "2026-08-10"
 tag: "Service Areas"
 ---
 
@@ -16,12 +16,12 @@ Many of these companies ship to Bandung on a regular basis — sending finished 
 
 Transit covers pickup across all of Bekasi, including:
 
-### Kota Bekasi
+### Bekasi City
 
-- Bekasi Selatan, Bekasi Utara, Bekasi Timur, Bekasi Barat
+- South Bekasi, North Bekasi, East Bekasi, West Bekasi
 - Medansatria, Jatiasih, Pondok Gede
 
-### Kabupaten Bekasi (Industrial Zones)
+### Bekasi Regency (Industrial Zones)
 
 - **Cikarang:** Jababeka Industrial Estate, MM2100, EJIP, Delta Silicon
 - **Cibitung:** Cibitung industrial area and surroundings
@@ -87,11 +87,11 @@ Factories often finish production at set times. Our team can align pickup schedu
 
 From Bekasi, we deliver across all of Greater Bandung:
 
-- **Kota Bandung:** Every district
-- **Kabupaten Bandung:** Dayeuhkolot, Banjaran, Soreang, Majalaya, Rancaekek, Cicalengka
-- **Bandung Barat:** Padalarang, Ngamprah, Cihampelas
+- **Bandung City:** Every district
+- **Bandung Regency:** Dayeuhkolot, Banjaran, Soreang, Majalaya, Rancaekek, Cicalengka
+- **West Bandung:** Padalarang, Ngamprah, Cihampelas
 
-And it runs both ways. Our line-haul route is Jakarta-Bandung in both directions, so goods from Bandung travel back on the Jakarta leg and we handle the delivery on to Bekasi from the Jakarta side. For South Kabupaten Bandung or other specific locations, please confirm with our team first so we can give you accurate coverage and pricing.
+And it runs both ways. Our line-haul route is Jakarta-Bandung in both directions, so goods from Bandung travel back on the Jakarta leg and we handle the delivery on to Bekasi from the Jakarta side. For South Bandung Regency or other specific locations, please confirm with our team first so we can give you accurate coverage and pricing.
 
 ## Service for Recurring Industrial Business Needs
 

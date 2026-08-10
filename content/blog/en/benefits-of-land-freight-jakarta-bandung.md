@@ -52,7 +52,7 @@ On the Jakarta-Bandung route, land transit times are highly competitive:
 - **The ~150 km distance** can be covered in 3-5 hours depending on traffic conditions
 - **Same-day delivery** is very achievable for morning pickups
 - **No waiting periods** like airport check-in or port unloading processes
-- **Direct pickup and delivery** with no transit through intermediate hubs or warehouses
+- **Pickup and delivery are handled entirely by Transit** through its own pools in Jakarta and Bandung, without being handed off to third-party carriers or outside consolidation hubs
 
 When you account for total time from pickup to delivery — not just travel time — land freight is often faster than other transport modes on the Jakarta-Bandung route.
 

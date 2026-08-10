@@ -2,7 +2,7 @@
 translationKey: "cara-packing-barang-cargo-yang-aman"
 title: "Cara Packing Barang Cargo yang Benar untuk Pengiriman Jarak Jauh"
 description: "Panduan lengkap cara packing barang cargo untuk pengiriman darat jarak jauh seperti Jakarta-Bandung. Tips memilih material, teknik pengemasan, dan labeling yang benar."
-date: "2026-08-11"
+date: "2026-08-10"
 tag: "Tips Packing"
 ---
 
