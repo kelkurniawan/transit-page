@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import AnalyticsEvents from "@/components/AnalyticsEvents";
 import "./globals.css";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   title: {
@@ -201,7 +206,12 @@ export default function RootLayout({
           <style>{`.fade-in { opacity: 1 !important; transform: none !important; }`}</style>
         </noscript>
       </head>
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        {children}
+        <AnalyticsEvents />
+        <Analytics />
+        {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
+      </body>
     </html>
   );
 }
