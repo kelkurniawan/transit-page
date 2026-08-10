@@ -97,4 +97,4 @@ Prosesnya sederhana:
 
 ---
 
-Siap memindahkan barang dari Tangerang, Serpong, atau BSD ke Bandung? [Chat dengan kami via WhatsApp](https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang%20dari%20Tangerang%2FSerong%20ke%20Bandung.) — tim kami siap membantu dan memberikan penawaran harga terbaik.
+Siap memindahkan barang dari Tangerang, Serpong, atau BSD ke Bandung? [Chat dengan kami via WhatsApp](https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang%20dari%20Tangerang%2FSerpong%20ke%20Bandung.) — tim kami siap membantu dan memberikan penawaran harga terbaik.

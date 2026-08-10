@@ -52,7 +52,7 @@ Untuk rute Jakarta-Bandung, waktu tempuh via darat sangat kompetitif:
 - **Jarak ~150 km** bisa ditempuh dalam 3-5 jam tergantung kondisi lalu lintas
 - **Same-day delivery** sangat mungkin untuk pengiriman pagi hari
 - **Tidak ada waktu tunggu** seperti proses check-in bandara atau bongkar muat pelabuhan
-- **Proses pickup dan delivery langsung** tanpa transit di hub/gudang perantara
+- **Pickup dan delivery ditangani penuh oleh Transit** melalui pool milik sendiri di Jakarta dan Bandung, tanpa dioper ke ekspedisi pihak ketiga atau hub konsolidasi luar
 
 Ketika memperhitungkan total waktu dari pickup hingga delivery (bukan hanya waktu perjalanan), ekspedisi darat seringkali lebih cepat untuk rute Jakarta-Bandung dibanding moda transportasi lain.
 

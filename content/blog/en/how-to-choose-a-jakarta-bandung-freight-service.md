@@ -70,7 +70,7 @@ Make sure the freight service you choose covers pickup and delivery areas that f
 
 For the Jakarta-Bandung route, an ideal freight partner should cover:
 - **Jakarta side (pickup and delivery):** Jakarta, Tangerang, Serpong (BSD), and Bekasi
-- **Bandung side (pickup and delivery):** Bandung Raya (Kota Bandung, Kabupaten Bandung, and Kabupaten Bandung Barat)
+- **Bandung side (pickup and delivery):** Bandung Raya (Bandung City, Bandung Regency, and West Bandung Regency)
 
 Both sides of the route should work as pickup points and delivery points — that's what a true two-way freight service looks like.
 

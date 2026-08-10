@@ -18,7 +18,7 @@ Transit solves that: **door-to-door freight service connecting Tangerang, Serpon
 
 ### Tangerang
 
-- Kota Tangerang (the entire city area)
+- Tangerang City (the entire city area)
 - South Tangerang (Serpong, Ciputat, Pamulang, Pondok Aren)
 - Industrial areas: Jatake, KIIC Tangerang, Benua Indah
 
@@ -37,9 +37,9 @@ We also cover pickup from West Jakarta (Cengkareng, Grogol, Kebon Jeruk) and Sou
 
 After pickup from Tangerang, Serpong, or BSD, we deliver straight to:
 
-- **Kota Bandung:** Every district, including Cicendo, Andir, Regol, Lengkong, Buahbatu, and more
-- **Kabupaten Bandung:** Dayeuhkolot, Banjaran, Soreang, Majalaya, Rancaekek
-- **Bandung Barat:** Padalarang, Ngamprah, Cihampelas, the Lembang area
+- **Bandung City:** Every district, including Cicendo, Andir, Regol, Lengkong, Buahbatu, and more
+- **Bandung Regency:** Dayeuhkolot, Banjaran, Soreang, Majalaya, Rancaekek
+- **West Bandung:** Padalarang, Ngamprah, Cihampelas, the Lembang area
 
 And the same route runs the other way, too — Bandung is just as much a pickup point for shipments heading back to Tangerang, Serpong, or BSD.
 
@@ -99,4 +99,4 @@ The process is simple:
 
 ---
 
-Ready to move goods between Tangerang, Serpong, or BSD and Bandung? [Chat with us on WhatsApp](https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang%20dari%20Tangerang%2FSerong%20ke%20Bandung.) — our team is ready to help and offer you the best rate.
+Ready to move goods between Tangerang, Serpong, or BSD and Bandung? [Chat with us on WhatsApp](https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang%20dari%20Tangerang%2FSerpong%20ke%20Bandung.) — our team is ready to help and offer you the best rate.

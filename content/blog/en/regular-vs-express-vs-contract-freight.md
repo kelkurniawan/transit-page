@@ -2,7 +2,7 @@
 translationKey: "perbedaan-ekspedisi-reguler-ekspres-kontrak"
 title: "Regular, Express, and Contract Freight Service: Which Is Right for Your Business?"
 description: "An explanation of the differences between regular, express, and contract freight service for Jakarta-Bandung shipping. A guide to choosing the right option for your business needs and budget."
-date: "2026-09-08"
+date: "2026-08-10"
 tag: "Guide"
 ---
 

@@ -2,7 +2,7 @@
 translationKey: "checklist-pengiriman-cargo-bulk-jakarta-bandung"
 title: "The Complete Bulk Cargo Shipping Checklist for Jakarta-Bandung"
 description: "A practical checklist for preparing bulk cargo shipments between Jakarta and Bandung. Make sure every shipment goes smoothly, safely, and on time."
-date: "2026-09-15"
+date: "2026-08-10"
 tag: "Logistics Tips"
 ---
 
