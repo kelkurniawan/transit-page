@@ -54,6 +54,8 @@ export async function generateMetadata({
       title: post.title,
       description: post.description,
       url,
+      siteName: "Transit",
+      locale: locale === "id" ? "id_ID" : "en_US",
       type: "article",
       publishedTime: post.date,
       images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],

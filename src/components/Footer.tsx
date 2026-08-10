@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import LogoIcon from "./icons/LogoIcon";
 
 export default function Footer() {
@@ -11,10 +12,10 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <a href="/" className="logo" aria-label={tNav("home")}>
+            <Link href="/" className="logo" aria-label={tNav("home")}>
               <LogoIcon className="logo-icon" />
               <div className="logo-text" style={{ color: "white" }}>TRANSIT</div>
-            </a>
+            </Link>
             <p>
               {t("tagline")}
             </p>
@@ -22,12 +23,12 @@ export default function Footer() {
           <div>
             <h4>{t("navHeading")}</h4>
             <ul className="footer-links">
-              <li><a href="/#tentang">{tNav("about")}</a></li>
-              <li><a href="/#layanan">{tNav("services")}</a></li>
-              <li><a href="/#rute">{tNav("route")}</a></li>
-              <li><a href="/#faq">{tNav("faq")}</a></li>
-              <li><a href="/#kontak">{tNav("contact")}</a></li>
-              <li><a href="/blog">{tNav("blog")}</a></li>
+              <li><Link href="/#tentang">{tNav("about")}</Link></li>
+              <li><Link href="/#layanan">{tNav("services")}</Link></li>
+              <li><Link href="/#rute">{tNav("route")}</Link></li>
+              <li><Link href="/#faq">{tNav("faq")}</Link></li>
+              <li><Link href="/#kontak">{tNav("contact")}</Link></li>
+              <li><Link href="/blog">{tNav("blog")}</Link></li>
             </ul>
           </div>
           <div>

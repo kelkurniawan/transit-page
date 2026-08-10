@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import LogoIcon from "./icons/LogoIcon";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -28,17 +29,17 @@ export default function Navbar({
     <>
       <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
         <div className="container">
-          <a href="/" className="logo" aria-label={t("home")}>
+          <Link href="/" className="logo" aria-label={t("home")}>
             <LogoIcon className="logo-icon" />
             <div className="logo-text">TRANSIT</div>
-          </a>
+          </Link>
           <ul className="nav-links">
-            <li><a href="/#tentang">{t("about")}</a></li>
-            <li><a href="/#layanan">{t("services")}</a></li>
-            <li><a href="/#rute">{t("route")}</a></li>
-            <li><a href="/blog">{t("blog")}</a></li>
-            <li><a href="/#faq">{t("faq")}</a></li>
-            <li><a href="/#kontak">{t("contact")}</a></li>
+            <li><Link href="/#tentang">{t("about")}</Link></li>
+            <li><Link href="/#layanan">{t("services")}</Link></li>
+            <li><Link href="/#rute">{t("route")}</Link></li>
+            <li><Link href="/blog">{t("blog")}</Link></li>
+            <li><Link href="/#faq">{t("faq")}</Link></li>
+            <li><Link href="/#kontak">{t("contact")}</Link></li>
           </ul>
           <div className="nav-right">
             <LanguageSwitcher slugMap={slugMap} />
@@ -52,12 +53,12 @@ export default function Navbar({
         </div>
       </nav>
       <div className={`mobile-menu${menuOpen ? " active" : ""}`}>
-        <a href="/#tentang" onClick={() => setMenuOpen(false)}>{t("about")}</a>
-        <a href="/#layanan" onClick={() => setMenuOpen(false)}>{t("services")}</a>
-        <a href="/#rute" onClick={() => setMenuOpen(false)}>{t("route")}</a>
-        <a href="/blog" onClick={() => setMenuOpen(false)}>{t("blog")}</a>
-        <a href="/#faq" onClick={() => setMenuOpen(false)}>{t("faq")}</a>
-        <a href="/#kontak" onClick={() => setMenuOpen(false)}>{t("contact")}</a>
+        <Link href="/#tentang" onClick={() => setMenuOpen(false)}>{t("about")}</Link>
+        <Link href="/#layanan" onClick={() => setMenuOpen(false)}>{t("services")}</Link>
+        <Link href="/#rute" onClick={() => setMenuOpen(false)}>{t("route")}</Link>
+        <Link href="/blog" onClick={() => setMenuOpen(false)}>{t("blog")}</Link>
+        <Link href="/#faq" onClick={() => setMenuOpen(false)}>{t("faq")}</Link>
+        <Link href="/#kontak" onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
         <a href={WA_LINK} className="btn btn-wa" target="_blank" rel="noopener noreferrer">
           {t("quote")}
         </a>

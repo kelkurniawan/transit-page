@@ -25,6 +25,25 @@ export async function generateMetadata({
         "x-default": "/blog",
       },
     },
+    // Metadata merges shallowly per top-level field: without this block the
+    // layout's homepage openGraph would survive and every shared /blog link
+    // would preview as the homepage.
+    openGraph: {
+      title: t("blog.title"),
+      description: t("blog.description"),
+      url: locale === "id" ? "/blog" : "/en/blog",
+      siteName: "Transit",
+      locale: locale === "id" ? "id_ID" : "en_US",
+      type: "website",
+      images: [
+        {
+          url: "/images/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: t("ogImageAlt"),
+        },
+      ],
+    },
   };
 }
 
