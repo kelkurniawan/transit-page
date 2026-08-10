@@ -1,6 +1,6 @@
 ---
 translationKey: "tips-memilih-jasa-ekspedisi-jakarta-bandung"
-title: "How to Choose the Right Jakarta–Bandung Freight Service"
+title: "How to Choose the Right Jakarta-Bandung Freight Service"
 description: "A practical guide to selecting a Jakarta-Bandung freight partner: safety, on-time performance, and competitive pricing for your business."
 date: "2026-06-10"
 tag: "Logistics Tips"

@@ -12,7 +12,7 @@ Tangerang, Serpong, dan BSD (Bumi Serpong Damai) bukan hanya kawasan permukiman 
 
 Namun, tidak semua jasa ekspedisi melayani **pickup langsung dari Tangerang, Serpong, atau BSD**. Banyak yang hanya memiliki titik pengiriman di Jakarta, memaksa bisnis untuk membawa barang sendiri ke depo terlebih dahulu — membuang waktu dan biaya.
 
-Transit hadir sebagai solusi: **jasa angkutan barang door-to-door dari Tangerang, Serpong, dan BSD langsung ke Bandung**.
+Transit hadir sebagai solusi: **jasa angkutan barang door-to-door dari Tangerang, Serpong, dan BSD langsung ke Bandung, dua arah**.
 
 ## Area Pickup yang Kami Layani di Koridor Barat Jakarta
 
@@ -61,7 +61,7 @@ Ini adalah keunggulan utama. Tim kami datang ke gudang atau kantor Anda di Tange
 
 ### Pengemudi yang Familiar dengan Rute
 
-Pengemudi kami berpengalaman melewati rute Serpong → BSD → Tol TB Simatupang/JORR → Cikampek → Cipularang → Bandung. Mereka tahu kapan harus berangkat untuk menghindari kemacetan terparah.
+Pengemudi kami berpengalaman melewati rute Serpong → BSD → Tol TB Simatupang/JORR → Cikampek → Cipularang → Bandung, dan setiap hari mereka menjalankan rute utama Jakarta-Bandung dua arah. Mereka tahu kapan harus berangkat untuk menghindari kemacetan terparah.
 
 ### Armada yang Terawat
 

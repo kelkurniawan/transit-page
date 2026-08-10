@@ -83,7 +83,7 @@ Checklist ini dibuat berdasarkan pengalaman bertahun-tahun dalam menangani pengi
 
 ---
 
-## Bagian 5: Koordinasi dengan Penerima di Bandung
+## Bagian 5: Koordinasi dengan Penerima di Bandung (atau di Jakarta, untuk Arah Sebaliknya)
 
 - [ ] Penerima sudah diberitahu tentang jadwal kedatangan estimasi
 - [ ] Penerima memastikan area bongkar muat tersedia

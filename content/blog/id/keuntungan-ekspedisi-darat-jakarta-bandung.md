@@ -71,12 +71,12 @@ Dibandingkan dengan pengiriman udara atau laut yang seringkali sulit dihubungi s
 
 Untuk memaksimalkan keuntungan-keuntungan di atas, pemilihan mitra ekspedisi darat yang tepat sangat penting. Pertimbangkan:
 
-- **Pengalaman di rute spesifik** — perusahaan yang sudah berpengalaman di rute Jakarta-Bandung memahami kondisi jalan, titik kemacetan, dan jalur alternatif
+- **Pengalaman di rute spesifik** — perusahaan yang sudah berpengalaman di rute Jakarta-Bandung memahami kondisi jalan, titik kemacetan, dan jalur alternatif di kedua arah
 - **Kondisi armada** — truk yang terawat memastikan keamanan barang dan ketepatan waktu
 - **Reputasi dan track record** — pilih perusahaan dengan rekam jejak yang terbukti
 
 ## Transit: Spesialis Ekspedisi Darat Jakarta-Bandung
 
-Dengan pengalaman lebih dari 25 tahun sejak 2001, Transit adalah mitra ekspedisi darat terpercaya untuk rute Jakarta-Bandung. Kami memahami setiap kilometer rute ini dan berkomitmen memberikan layanan pengiriman barang yang cepat, aman, dan tepat waktu.
+Dengan pengalaman lebih dari 25 tahun sejak 2001, Transit adalah mitra ekspedisi darat terpercaya untuk rute Jakarta-Bandung, dua arah. Kami memahami setiap kilometer rute ini dan berkomitmen memberikan layanan pengiriman barang yang cepat, aman, dan tepat waktu.
 
 [**Hubungi kami sekarang** via WhatsApp](https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.) untuk konsultasi gratis dan penawaran harga terbaik.

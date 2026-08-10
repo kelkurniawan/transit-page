@@ -91,7 +91,7 @@ From Bekasi, we deliver across all of Greater Bandung:
 - **Kabupaten Bandung:** Dayeuhkolot, Banjaran, Soreang, Majalaya, Rancaekek, Cicalengka
 - **Bandung Barat:** Padalarang, Ngamprah, Cihampelas
 
-And it runs both ways — we're just as ready to pick up in Bandung and deliver back to Bekasi. For South Kabupaten Bandung or other specific locations, please confirm with our team first so we can give you accurate coverage and pricing.
+And it runs both ways. Our line-haul route is Jakarta-Bandung in both directions, so goods from Bandung travel back on the Jakarta leg and we handle the delivery on to Bekasi from the Jakarta side. For South Kabupaten Bandung or other specific locations, please confirm with our team first so we can give you accurate coverage and pricing.
 
 ## Service for Recurring Industrial Business Needs
 

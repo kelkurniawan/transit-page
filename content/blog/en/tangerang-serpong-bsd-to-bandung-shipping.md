@@ -63,7 +63,7 @@ This is the core advantage. Our team comes to your warehouse or office in Tanger
 
 ### Drivers Who Know the Route
 
-Our drivers are experienced on the Serpong → BSD → TB Simatupang/JORR toll → Cikampek → Cipularang → Bandung route, both ways. They know exactly when to leave to dodge the worst traffic.
+Our drivers are experienced on the Serpong → BSD → TB Simatupang/JORR toll → Cikampek → Cipularang → Bandung route, and they run the Jakarta-Bandung line-haul in both directions day in, day out. They know exactly when to leave to dodge the worst traffic.
 
 ### A Well-Maintained Fleet
 

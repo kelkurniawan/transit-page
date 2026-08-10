@@ -104,7 +104,7 @@ Untuk pengiriman massal → **FTL jelas lebih tepat**
 
 ## Layanan FTL dan LTL Transit untuk Rute Jakarta-Bandung
 
-Transit menyediakan kedua jenis layanan dengan armada yang sesuai:
+Transit menyediakan kedua jenis layanan dengan armada yang sesuai, untuk kedua arah rute:
 
 **Untuk FTL:**
 - Truk engkel (kapasitas ~3-4 ton)
