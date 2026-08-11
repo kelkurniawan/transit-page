@@ -70,7 +70,9 @@ export async function generateMetadata({
       },
     },
     verification: {
-      // google: "your-google-verification-code",
+      // Kode verifikasi Google Search Console. Diisi lewat env var supaya tidak
+      // perlu ubah kode; tag-nya hilang sendiri kalau env var belum di-set.
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
     },
   };
 }
