@@ -14,6 +14,8 @@ Namun, tidak semua jasa ekspedisi melayani **pickup langsung dari Tangerang, Ser
 
 Transit hadir sebagai solusi: **jasa angkutan barang door-to-door dari Tangerang, Serpong, dan BSD langsung ke Bandung, dua arah**.
 
+**Baca juga:** [Jasa Pengiriman Barang dari Bekasi ke Bandung: Rute, Waktu, dan Tarif](/blog/pengiriman-barang-bekasi-ke-bandung) · [Berapa Lama Pengiriman Barang dari Jakarta ke Bandung? Estimasi Waktu Lengkap](/blog/berapa-lama-pengiriman-barang-jakarta-ke-bandung)
+
 ## Area Pickup yang Kami Layani di Koridor Barat Jakarta
 
 ### Tangerang

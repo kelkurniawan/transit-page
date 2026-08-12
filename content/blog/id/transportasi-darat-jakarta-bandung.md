@@ -12,6 +12,8 @@ Dalam dunia logistik, rute Jakarta-Bandung adalah salah satu koridor bisnis pali
 
 Di antara berbagai moda transportasi yang tersedia, **transportasi darat tetap menjadi tulang punggung logistik** di rute ini. Mengapa? Karena transportasi udara tidak ekonomis untuk kargo massal, dan tidak ada jalur kereta khusus barang yang menjangkau titik distribusi secara door-to-door.
 
+**Baca juga:** [5 Keuntungan Menggunakan Ekspedisi Darat untuk Pengiriman Jakarta-Bandung](/blog/keuntungan-ekspedisi-darat-jakarta-bandung) · [Berapa Lama Pengiriman Barang dari Jakarta ke Bandung? Estimasi Waktu Lengkap](/blog/berapa-lama-pengiriman-barang-jakarta-ke-bandung)
+
 ## Keunggulan Angkutan Barang via Jalur Darat
 
 ### 1. Fleksibilitas Pickup dan Delivery

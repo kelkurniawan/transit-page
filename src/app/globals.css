@@ -26,10 +26,19 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+/* Situs ini hanya punya tema terang. Tanpa `color-scheme` eksplisit, Chrome
+   Android (Auto Dark Theme, aktif default di banyak perangkat) menggelapkan
+   latar sendiri sementara warna teks tetap navy — hasilnya teks gelap di atas
+   latar gelap dan artikel jadi tak terbaca. */
+html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+    background-color: #ffffff;
+}
 
 body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #ffffff;
     color: var(--gray-800);
     line-height: 1.6;
     overflow-x: hidden;
@@ -1196,6 +1205,16 @@ section { padding: 80px 0; }
 .blog-post-content ul, .blog-post-content ol { margin: 0 0 20px 24px; }
 .blog-post-content li { margin-bottom: 8px; }
 .blog-post-content strong { color: var(--navy); }
+/* Link di dalam artikel — sebelumnya tanpa style, jadi tampil biru default browser. */
+.blog-post-content a {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: color 0.2s ease;
+}
+.blog-post-content a:hover { color: var(--navy); }
 
 @media (max-width: 1024px) {
     .blog-grid { grid-template-columns: repeat(2, 1fr); }

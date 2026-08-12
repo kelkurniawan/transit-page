@@ -42,6 +42,30 @@ export function getAllPosts(locale: string): BlogPost[] {
     .sort((a, b) => (a.date > b.date ? -1 : 1));
 }
 
+/**
+ * Artikel terkait untuk ditampilkan di akhir sebuah artikel.
+ *
+ * Sebelumnya ini cuma `getAllPosts().slice(0, 2)` — yang berarti setiap artikel
+ * menunjuk ke 2 artikel TERBARU yang sama, bukan yang relevan. Efeknya tidak ada
+ * topical cluster: link internal menumpuk di dua halaman saja.
+ *
+ * Sekarang artikel bertag sama didahulukan, sisanya diisi artikel terbaru supaya
+ * jumlahnya selalu penuh walau tag-nya cuma punya sedikit anggota.
+ */
+export function getRelatedPosts(
+  locale: string,
+  currentSlug: string,
+  limit = 3
+): BlogPost[] {
+  const others = getAllPosts(locale).filter((p) => p.slug !== currentSlug);
+  const current = getAllPosts(locale).find((p) => p.slug === currentSlug);
+  if (!current) return others.slice(0, limit);
+
+  const sameTag = others.filter((p) => p.tag === current.tag);
+  const rest = others.filter((p) => p.tag !== current.tag);
+  return [...sameTag, ...rest].slice(0, limit);
+}
+
 export async function getPostBySlug(
   locale: string,
   slug: string

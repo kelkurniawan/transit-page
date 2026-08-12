@@ -14,6 +14,8 @@ The trouble is, not every freight service offers **direct pickup from Tangerang,
 
 Transit solves that: **door-to-door freight service connecting Tangerang, Serpong, and BSD directly with Bandung, in both directions.**
 
+**Read also:** [Freight Shipping from Bekasi to Bandung: Routes, Timing, and Rates](/en/blog/bekasi-to-bandung-shipping) · [How Long Does Shipping from Jakarta to Bandung Take? A Complete Timeline](/en/blog/how-long-does-jakarta-to-bandung-shipping-take)
+
 ## Pickup Areas We Cover in the Western Jakarta Corridor
 
 ### Tangerang

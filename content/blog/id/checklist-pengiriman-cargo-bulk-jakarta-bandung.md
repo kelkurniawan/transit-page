@@ -14,6 +14,8 @@ Checklist ini dibuat berdasarkan pengalaman bertahun-tahun dalam menangani pengi
 
 ---
 
+**Baca juga:** [Cara Packing Barang Cargo yang Benar untuk Pengiriman Jarak Jauh](/blog/cara-packing-barang-cargo-yang-aman) · [FTL vs LTL: Memilih Jenis Muatan Truk yang Tepat untuk Bisnis Anda](/blog/ftl-vs-ltl-memilih-muatan-truk-untuk-bisnis)
+
 ## Bagian 1: Persiapan Barang (H-2 sampai H-1 Pengiriman)
 
 ### Inventarisasi dan Penghitungan

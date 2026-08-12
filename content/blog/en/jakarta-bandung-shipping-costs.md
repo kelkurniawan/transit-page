@@ -12,6 +12,8 @@ One of the questions we hear most often from businesses is: **"How much does it 
 
 In this guide, we'll walk through the factors that affect shipping costs, give you a sense of price estimates, and share tips for getting the best freight rates on the Jakarta-Bandung route.
 
+**Read also:** [8 Tips to Cut Jakarta-Bandung Freight Costs for Your Business](/en/blog/tips-to-cut-jakarta-bandung-freight-costs) · [FTL vs LTL: Choosing the Right Truckload Type for Your Business](/en/blog/ftl-vs-ltl-choosing-the-right-truckload)
+
 ## Factors That Affect Shipping Costs
 
 ### 1. Weight and Volume

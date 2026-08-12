@@ -19,6 +19,8 @@ Most logistics guides are written for ordinary consumers — people who occasion
 
 This article is written specifically for businesses like yours: factories, manufacturers, distributors, and B2B companies that need a logistics partner — not just a run-of-the-mill delivery service.
 
+**Read also:** [Regular, Express, and Contract Freight Service: Which Is Right for Your Business?](/en/blog/regular-vs-express-vs-contract-freight) · [The Complete Bulk Cargo Shipping Checklist for Jakarta-Bandung](/en/blog/bulk-cargo-shipping-checklist-jakarta-bandung)
+
 ## Logistics Challenges Businesses Face on the Jakarta-Bandung Corridor
 
 ### Shipping Needs That Can't Wait

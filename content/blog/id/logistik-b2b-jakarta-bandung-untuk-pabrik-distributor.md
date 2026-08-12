@@ -19,6 +19,8 @@ Kebanyakan panduan logistik ditulis untuk konsumen biasa — orang yang sesekali
 
 Artikel ini ditulis khusus untuk bisnis seperti Anda: pabrik, manufaktur, distributor, dan perusahaan B2B yang membutuhkan mitra logistik — bukan sekadar jasa pengiriman biasa.
 
+**Baca juga:** [Layanan Ekspedisi Reguler, Ekspres, dan Kontrak: Mana yang Tepat untuk Bisnis?](/blog/perbedaan-ekspedisi-reguler-ekspres-kontrak) · [Checklist Lengkap Persiapan Pengiriman Cargo Bulk Jakarta-Bandung](/blog/checklist-pengiriman-cargo-bulk-jakarta-bandung)
+
 ## Tantangan Logistik yang Dihadapi Bisnis di Koridor Jakarta-Bandung
 
 ### Kebutuhan Pengiriman yang Tidak Bisa Ditunda

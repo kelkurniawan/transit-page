@@ -30,6 +30,8 @@ LTL berarti barang Anda **digabung dengan pengiriman lain** dalam satu truk yang
 - Proses mungkin melibatkan titik konsolidasi
 - Cocok untuk muatan di bawah kapasitas penuh truk
 
+**Baca juga:** [Checklist Lengkap Persiapan Pengiriman Cargo Bulk Jakarta-Bandung](/blog/checklist-pengiriman-cargo-bulk-jakarta-bandung) · [Panduan Biaya Pengiriman Barang Jakarta Bandung 2026: Faktor dan Estimasi Harga](/blog/biaya-pengiriman-barang-jakarta-bandung)
+
 ## Perbandingan FTL vs LTL
 
 | Aspek | FTL | LTL |

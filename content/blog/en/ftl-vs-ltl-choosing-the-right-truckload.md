@@ -30,6 +30,8 @@ LTL means your cargo is **combined with other shipments** in the same truck. You
 - The process may involve a consolidation point
 - Suited to loads below a truck's full capacity
 
+**Read also:** [The Complete Bulk Cargo Shipping Checklist for Jakarta-Bandung](/en/blog/bulk-cargo-shipping-checklist-jakarta-bandung) · [Jakarta-Bandung Shipping Cost Guide 2026: Factors and Price Estimates](/en/blog/jakarta-bandung-shipping-costs)
+
 ## FTL vs LTL Comparison
 
 | Aspect | FTL | LTL |

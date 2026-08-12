@@ -14,6 +14,8 @@ This checklist is built on years of experience handling B2B shipments on the Jak
 
 ---
 
+**Read also:** [How to Pack Cargo Correctly for Long-Distance Shipping](/en/blog/how-to-pack-cargo-safely) · [FTL vs LTL: Choosing the Right Truckload Type for Your Business](/en/blog/ftl-vs-ltl-choosing-the-right-truckload)
+
 ## Part 1: Preparing Your Goods (2 Days to 1 Day Before Shipping)
 
 ### Inventory and Counting

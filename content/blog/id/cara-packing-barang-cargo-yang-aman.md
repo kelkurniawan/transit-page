@@ -2,7 +2,7 @@
 translationKey: "cara-packing-barang-cargo-yang-aman"
 title: "Cara Packing Barang Cargo yang Benar untuk Pengiriman Jarak Jauh"
 description: "Panduan lengkap cara packing barang cargo untuk pengiriman darat jarak jauh seperti Jakarta-Bandung. Tips memilih material, teknik pengemasan, dan labeling yang benar."
-date: "2026-08-10"
+date: "2026-08-07"
 tag: "Tips Packing"
 ---
 
@@ -18,6 +18,8 @@ Dalam pengiriman darat, barang melewati berbagai kondisi:
 - Gerakan lateral saat truk menikung atau rem mendadak
 
 Packing yang benar melindungi barang dari semua kondisi ini sekaligus mempermudah proses loading-unloading.
+
+**Baca juga:** [Checklist Lengkap Persiapan Pengiriman Cargo Bulk Jakarta-Bandung](/blog/checklist-pengiriman-cargo-bulk-jakarta-bandung) · [8 Tips Hemat Biaya Angkutan Barang Jakarta-Bandung untuk Bisnis](/blog/tips-hemat-angkutan-barang-jakarta-bandung)
 
 ## Prinsip Dasar Packing Cargo
 

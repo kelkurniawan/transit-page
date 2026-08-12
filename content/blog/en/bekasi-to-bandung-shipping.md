@@ -2,7 +2,7 @@
 translationKey: "pengiriman-barang-bekasi-ke-bandung"
 title: "Freight Shipping from Bekasi to Bandung: Routes, Timing, and Rates"
 description: "Freight and cargo shipping between Bekasi and Bandung. Route details, estimated travel time, pickup areas in Bekasi, and tips for getting the best rate."
-date: "2026-08-10"
+date: "2026-07-28"
 tag: "Service Areas"
 ---
 
@@ -11,6 +11,8 @@ tag: "Service Areas"
 Bekasi is one of Indonesia's largest industrial regions. Thousands of factories, distribution warehouses, and business centers operate along the Bekasi corridor — from MM2100 in Cibitung, EJIP (East Jakarta Industrial Park), and KIM (Kawasan Industri Menara) in Cikarang, to the Jababeka estate.
 
 Many of these companies ship to Bandung on a regular basis — sending finished goods to Bandung-based distributors, or receiving raw materials from Bandung suppliers. But finding a **freight service from Bekasi to Bandung** that actually does door-to-door pickup from Bekasi's industrial zones isn't always easy.
+
+**Read also:** [Freight Shipping from Tangerang, Serpong, and BSD to Bandung](/en/blog/tangerang-serpong-bsd-to-bandung-shipping) · [How Long Does Shipping from Jakarta to Bandung Take? A Complete Timeline](/en/blog/how-long-does-jakarta-to-bandung-shipping-take)
 
 ## Our Pickup Areas in Bekasi
 

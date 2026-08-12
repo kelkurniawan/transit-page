@@ -12,6 +12,8 @@ In an era with plenty of shipping options — air, sea, rail — land transport 
 
 This article covers five key benefits of using land freight for your business shipping needs on the Jakarta-Bandung corridor, in either direction.
 
+**Read also:** [Jakarta-Bandung Land Transportation: A Trusted Logistics Solution for Business](/en/blog/jakarta-bandung-land-transportation) · [FTL vs LTL: Choosing the Right Truckload Type for Your Business](/en/blog/ftl-vs-ltl-choosing-the-right-truckload)
+
 ## 1. Scheduling and Route Flexibility
 
 Land freight offers a level of flexibility other transport modes simply can't match:

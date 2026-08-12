@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
   getPostBySlug,
   getAllPostSlugs,
-  getAllPosts,
+  getRelatedPosts,
   getTranslatedSlug,
   findLocaleForSlug,
 } from "@/lib/blog";
@@ -104,7 +104,7 @@ export default async function BlogPostPage({
   const homeUrl = locale === "id" ? SITE_URL : `${SITE_URL}/en`;
   const blogUrl = locale === "id" ? `${SITE_URL}/blog` : `${SITE_URL}/en/blog`;
   const dateLocale = locale === "id" ? "id-ID" : "en-US";
-  const related = getAllPosts(locale).filter((p) => p.slug !== slug).slice(0, 2);
+  const related = getRelatedPosts(locale, slug, 3);
 
   const slugMap = Object.fromEntries(
     routing.locales.map((l) => [

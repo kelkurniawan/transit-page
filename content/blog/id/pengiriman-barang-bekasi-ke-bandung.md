@@ -2,7 +2,7 @@
 translationKey: "pengiriman-barang-bekasi-ke-bandung"
 title: "Jasa Pengiriman Barang dari Bekasi ke Bandung: Rute, Waktu, dan Tarif"
 description: "Layanan angkutan barang dan ekspedisi dari Bekasi ke Bandung. Informasi rute, estimasi waktu tempuh, area pickup di Bekasi, dan tips mendapatkan tarif terbaik."
-date: "2026-08-10"
+date: "2026-07-28"
 tag: "Area Layanan"
 ---
 
@@ -11,6 +11,8 @@ tag: "Area Layanan"
 Bekasi adalah salah satu kawasan industri terbesar di Indonesia. Ribuan pabrik, gudang distribusi, dan pusat bisnis beroperasi di sepanjang koridor Bekasi — mulai dari MM2100 di Cibitung, EJIP (East Jakarta Industrial Park), KIM (Kawasan Industri Menara) di Cikarang, hingga kawasan Jababeka.
 
 Banyak dari perusahaan-perusahaan ini memiliki kebutuhan pengiriman rutin ke Bandung — baik mengirim produk jadi ke distributor Bandung, maupun menerima bahan baku dari supplier Bandung. Namun, mencari **jasa ekspedisi dari Bekasi ke Bandung** yang benar-benar melakukan pickup door-to-door dari kawasan industri Bekasi tidak selalu mudah.
+
+**Baca juga:** [Jasa Pengiriman Barang dari Tangerang, Serpong, dan BSD ke Bandung](/blog/pengiriman-barang-tangerang-serpong-bsd-ke-bandung) · [Berapa Lama Pengiriman Barang dari Jakarta ke Bandung? Estimasi Waktu Lengkap](/blog/berapa-lama-pengiriman-barang-jakarta-ke-bandung)
 
 ## Area Pickup Kami di Bekasi
 
