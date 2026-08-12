@@ -45,15 +45,15 @@
     "floatLabel": "Chat with us",
     "floatAriaLabel": "Contact us via WhatsApp",
     "prefill": {
-      "hero": "Halo, saya ingin meminta penawaran untuk pengiriman rutin rute Jakarta–Bandung.",
-      "navbar": "Halo, saya ingin meminta penawaran pengiriman barang.",
-      "mobileBar": "Halo, saya ingin meminta penawaran pengiriman barang.",
-      "float": "Halo, saya ingin menanyakan layanan pengiriman barang.",
-      "cta": "Halo, saya ingin mulai mengirim barang rute Jakarta–Bandung. Boleh dibantu penawarannya?",
-      "painGain": "Halo, saya sedang mencari ekspedisi dengan jadwal tetap untuk rute Jakarta–Bandung.",
-      "contact": "Halo, saya menghubungi dari halaman Kontak dan ingin menanyakan layanan pengiriman.",
-      "footer": "Halo, saya ingin menanyakan layanan pengiriman barang Transit.",
-      "blogPost": "Halo, saya baru membaca artikel “{title}” di website Transit dan ingin menanyakan layanan pengiriman."
+      "hero": "Hi, I'd like to request a quote for regular shipments on the Jakarta–Bandung route.",
+      "navbar": "Hi, I'd like to request a freight quote.",
+      "mobileBar": "Hi, I'd like to request a freight quote.",
+      "float": "Hi, I'd like to ask about your freight services.",
+      "cta": "Hi, I'd like to start shipping on the Jakarta–Bandung route. Could you send me a quote?",
+      "painGain": "Hi, I'm looking for a freight provider with a fixed schedule on the Jakarta–Bandung route.",
+      "contact": "Hi, I'm reaching out from the Contact page and would like to ask about your services.",
+      "footer": "Hi, I'd like to ask about Transit's freight services.",
+      "blogPost": "Hi, I just read the article “{title}” on the Transit website and would like to ask about your freight services."
     }
   },
   "Hero": {
