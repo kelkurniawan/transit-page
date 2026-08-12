@@ -30,3 +30,7 @@ yarn-error.log*
 *.swo
 .vercel
 .env*
+
+# kredensial Google OAuth — jangan pernah masuk repo
+client_secret*.json
+*credentials*.json
