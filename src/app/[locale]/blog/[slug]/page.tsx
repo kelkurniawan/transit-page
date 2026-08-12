@@ -9,6 +9,7 @@ import {
 } from "@/lib/blog";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { waLink } from "@/lib/whatsapp";
 import { Link, redirect } from "@/i18n/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -16,8 +17,6 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 import MobileCTABar from "@/components/MobileCTABar";
 
 const SITE_URL = "https://transitexpress.my.id";
-const WA_LINK =
-  "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -79,6 +78,7 @@ export default async function BlogPostPage({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "Blog" });
+  const tWa = await getTranslations({ locale, namespace: "WhatsApp" });
   const post = await getPostBySlug(locale, slug);
   if (!post) {
     // The slug doesn't exist in this locale. This commonly happens when
@@ -174,7 +174,7 @@ export default async function BlogPostPage({
         <div className="blog-post-cta">
           <h3>{t("ctaHeading")}</h3>
           <p>{t("ctaBody")}</p>
-          <a href={WA_LINK} className="btn btn-wa btn-lg" target="_blank" rel="noopener noreferrer">
+          <a href={waLink(tWa("prefill.blogPost", { title: post.title }))} className="btn btn-wa btn-lg" target="_blank" rel="noopener noreferrer">
             {t("ctaButton")}
           </a>
         </div>

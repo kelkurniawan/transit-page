@@ -1,11 +1,11 @@
 import { useTranslations } from "next-intl";
+import { waLink } from "@/lib/whatsapp";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
-const WA_LINK =
-  "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
 
 export default function Hero() {
   const t = useTranslations("Hero");
+  const tWa = useTranslations("WhatsApp");
 
   return (
     <section className="hero" id="hero">
@@ -25,7 +25,7 @@ export default function Hero() {
             {t("subtitle")}
           </p>
           <div className="hero-actions">
-            <a href={WA_LINK} className="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+            <a href={waLink(tWa("prefill.hero"))} className="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon />
               <span>{t("whatsappCta")}</span>
             </a>

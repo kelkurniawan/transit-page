@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { waLink } from "@/lib/whatsapp";
 import { Link } from "@/i18n/navigation";
 import LogoIcon from "./icons/LogoIcon";
 
@@ -35,7 +36,7 @@ export default function Footer() {
             <h4>{t("contactHeading")}</h4>
             <ul className="footer-links">
               <li>
-                <a href="https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang." target="_blank" rel="noopener noreferrer">
+                <a href={waLink(tWa("prefill.footer"))} target="_blank" rel="noopener noreferrer">
                   {tWa("label")}
                 </a>
               </li>

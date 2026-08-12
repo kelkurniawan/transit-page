@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { waLink } from "@/lib/whatsapp";
 
 export default function Contact() {
   const t = useTranslations("Contact");
@@ -59,7 +60,7 @@ export default function Contact() {
               <div>
                 <h3>{t("whatsappTitle")}</h3>
                 <p>
-                  <a href="https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang." target="_blank" rel="noopener noreferrer">
+                  <a href={waLink(tWa("prefill.contact"))} target="_blank" rel="noopener noreferrer">
                     {tWa("label")}
                   </a>
                 </p>

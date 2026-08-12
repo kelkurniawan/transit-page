@@ -1,11 +1,11 @@
 import { useTranslations } from "next-intl";
+import { waLink } from "@/lib/whatsapp";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
-const WA_LINK =
-  "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
 
 export default function CTA() {
   const t = useTranslations("CTA");
+  const tWa = useTranslations("WhatsApp");
 
   return (
     <section className="cta-section">
@@ -16,7 +16,7 @@ export default function CTA() {
             {t("body")}
           </p>
           <div className="cta-actions">
-            <a href={WA_LINK} className="btn btn-wa btn-lg" target="_blank" rel="noopener noreferrer">
+            <a href={waLink(tWa("prefill.cta"))} className="btn btn-wa btn-lg" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon size={22} />
               <span>{t("whatsappCta")}</span>
             </a>

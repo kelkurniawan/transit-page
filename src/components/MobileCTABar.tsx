@@ -1,18 +1,18 @@
 import { useTranslations } from "next-intl";
+import { waLink } from "@/lib/whatsapp";
 import { Link } from "@/i18n/navigation";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
-const WA_LINK =
-  "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
 
 /** CTA permanen di bawah layar mobile. Disembunyikan di atas 768px lewat CSS. */
 export default function MobileCTABar() {
   const t = useTranslations("Nav");
+  const tWa = useTranslations("WhatsApp");
 
   return (
     <div className="mobile-cta-bar">
       <a
-        href={WA_LINK}
+        href={waLink(tWa("prefill.mobileBar"))}
         className="btn btn-wa"
         target="_blank"
         rel="noopener noreferrer"

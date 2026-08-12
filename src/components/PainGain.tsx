@@ -1,8 +1,7 @@
 import { useTranslations } from "next-intl";
+import { waLink } from "@/lib/whatsapp";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
-const WA_LINK =
-  "https://wa.me/6282124064792?text=Halo%2C%20saya%20ingin%20menanyakan%20layanan%20pengiriman%20barang.";
 
 const benefitIcons = [
   (
@@ -45,6 +44,7 @@ const benefitIcons = [
 
 export default function PainGain() {
   const t = useTranslations("PainGain");
+  const tWa = useTranslations("WhatsApp");
   const items = t.raw("items") as Array<{ problem: string; title: string; desc: string }>;
 
   return (
@@ -68,7 +68,7 @@ export default function PainGain() {
           ))}
         </div>
         <div className="solusi-cta fade-in">
-          <a href={WA_LINK} className="btn btn-wa btn-lg" target="_blank" rel="noopener noreferrer">
+          <a href={waLink(tWa("prefill.painGain"))} className="btn btn-wa btn-lg" target="_blank" rel="noopener noreferrer">
             <WhatsAppIcon size={22} />
             <span>{t("ctaLabel")}</span>
           </a>

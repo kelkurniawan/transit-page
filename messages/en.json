@@ -43,7 +43,18 @@
   "WhatsApp": {
     "label": "Chat via WhatsApp",
     "floatLabel": "Chat with us",
-    "floatAriaLabel": "Contact us via WhatsApp"
+    "floatAriaLabel": "Contact us via WhatsApp",
+    "prefill": {
+      "hero": "Halo, saya ingin meminta penawaran untuk pengiriman rutin rute Jakarta–Bandung.",
+      "navbar": "Halo, saya ingin meminta penawaran pengiriman barang.",
+      "mobileBar": "Halo, saya ingin meminta penawaran pengiriman barang.",
+      "float": "Halo, saya ingin menanyakan layanan pengiriman barang.",
+      "cta": "Halo, saya ingin mulai mengirim barang rute Jakarta–Bandung. Boleh dibantu penawarannya?",
+      "painGain": "Halo, saya sedang mencari ekspedisi dengan jadwal tetap untuk rute Jakarta–Bandung.",
+      "contact": "Halo, saya menghubungi dari halaman Kontak dan ingin menanyakan layanan pengiriman.",
+      "footer": "Halo, saya ingin menanyakan layanan pengiriman barang Transit.",
+      "blogPost": "Halo, saya baru membaca artikel “{title}” di website Transit dan ingin menanyakan layanan pengiriman."
+    }
   },
   "Hero": {
     "badge": "Trusted Since 2001",
